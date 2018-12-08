@@ -2,15 +2,13 @@ package base.game;
 
 
 import base.GameObject;
-import base.Scene.MenuScene;
-import base.Scene.Scene;
-import base.Scene.SceneManager;
 import base.BackGround;
+import base.enemy.Enemy;
+import base.enemy.EnemySummoner;
 import base.player.Player;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.ArrayList;
 
 public class GameCanvas extends JPanel {
 
@@ -18,6 +16,8 @@ public class GameCanvas extends JPanel {
         BackGround backGround = GameObject.recycle(BackGround.class);
         this.setPreferredSize(new Dimension(Settings.SCREEN_WIDTH, Settings.SCREEN_HEIGHT));
         Player player = GameObject.recycle(Player.class);
+        EnemySummoner enemySummoner = GameObject.recycle((EnemySummoner.class));
+
 //        SceneManager.signNewScene(new MenuScene());
     }
 

@@ -22,23 +22,42 @@ public class Enemy extends GameObject implements Physics {
     FrameCounter immuneCounter;
     public int hp;
     boolean immune;
-    Action action;
+    int direction;
 
     public Enemy() {
         super();
-        this.boxCollider = new BoxCollider(this.position, 28, 28);
+        this.boxCollider = new BoxCollider(this.position, 15, 15);
         this.renderer = new BoxRenderer(this.boxCollider, Color.BLUE, true);
         this.hp = 3;
         this.immune = false;
         this.immuneCounter = new FrameCounter(60);
-        GameObject enemy = GameObject.recycle(Enemy.class);
-        enemy.position.set(200, 300);
+        this.velocity.set(1,0);
+        this.direction = (int) Math.random()*5 +0;
     }
 
     @Override
     public void run() {
         super.run();
-        this.action.run(this);
+        this.move();
+        this.fire();
+    }
+
+    private void move() {
+        if (this.direction == 1) {
+            this.position.addThis(0, -Settings.WAY_SIZE/2);
+        }
+        if (this.direction == 2) {
+            this.position.addThis(0, Settings.WAY_SIZE/2);
+        }
+        if (this.direction == 3) {
+            this.position.addThis(-Settings.WAY_SIZE/2, 0);
+        }
+        if (this.direction == 4) {
+            this.position.addThis(Settings.WAY_SIZE/2, 0);
+        }
+    }
+
+    private void fire() {
     }
 
     public void takeDamage (int damage) {
@@ -60,7 +79,6 @@ public class Enemy extends GameObject implements Physics {
         this.immune = false;
         this.immuneCounter.reset();
         this.hp = 3;
-        this.velocity.set(0,3);
     }
 
     @Override

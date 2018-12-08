@@ -1,5 +1,8 @@
 import base.game.GameCanvas;
 import base.game.GameWindow;
+import base.game.Settings;
+
+import java.awt.*;
 
 /**
  * Created by huynq on 7/4/17.
@@ -9,6 +12,7 @@ public class Program {
         GameWindow window = new GameWindow();
 
         GameCanvas canvas = new GameCanvas();
+        canvas.setPreferredSize(new Dimension(Settings.SCREEN_WIDTH, Settings.SCREEN_HEIGHT));
         window.add(canvas);
         window.pack();
         window.setVisible(true);
