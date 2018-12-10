@@ -21,7 +21,7 @@ public class Player extends GameObject implements Physics {
         this.position.set(210, 310);
         this.boxCollider = new BoxCollider(this.position, 16, 16);
         this.renderer = new BoxRenderer(this.boxCollider, Color.CYAN, true);
-        this.moveCounter = new FrameCounter(1);
+        this.moveCounter = new FrameCounter(4);
         this.fireCounter = new FrameCounter(15);
         this.direction = 1;
     }

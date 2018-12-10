@@ -11,6 +11,7 @@ import base.game.GameCanvas;
 import base.game.Settings;
 import base.physics.BoxCollider;
 import base.physics.Physics;
+import base.player.PlayerBullet;
 import tklibs.SpriteUtils;
 
 import java.awt.*;
@@ -23,6 +24,8 @@ public class Enemy extends GameObject implements Physics {
     public int hp;
     boolean immune;
     int direction;
+    FrameCounter moveCounter;
+    FrameCounter fireCounter;
 
     public Enemy() {
         super();
@@ -31,33 +34,62 @@ public class Enemy extends GameObject implements Physics {
         this.hp = 3;
         this.immune = false;
         this.immuneCounter = new FrameCounter(60);
-        this.velocity.set(1,0);
-        this.direction = (int) Math.random()*5 +0;
+        this.moveCounter = new FrameCounter(6);
+        this.fireCounter = new FrameCounter(10);
     }
 
     @Override
     public void run() {
         super.run();
         this.move();
-        this.fire();
+        if(this.fireCounter.run()) {
+            this.fire();
+        }
+
     }
 
     private void move() {
-        if (this.direction == 1) {
-            this.position.addThis(0, -Settings.WAY_SIZE/2);
-        }
-        if (this.direction == 2) {
-            this.position.addThis(0, Settings.WAY_SIZE/2);
-        }
-        if (this.direction == 3) {
-            this.position.addThis(-Settings.WAY_SIZE/2, 0);
-        }
-        if (this.direction == 4) {
-            this.position.addThis(Settings.WAY_SIZE/2, 0);
+        if (this.moveCounter.run()) {
+            if (this.direction == 1) {
+                this.position.addThis(0, -Settings.WAY_SIZE/2);
+            }
+            if (this.direction == 2) {
+                this.position.addThis(0, Settings.WAY_SIZE/2);
+            }
+            if (this.direction == 3) {
+                this.position.addThis(-Settings.WAY_SIZE/2, 0);
+            }
+            if (this.direction == 4) {
+                this.position.addThis(Settings.WAY_SIZE/2, 0);
+            }
+            this.moveCounter.reset();
         }
     }
 
+//    private void fire() {
+//        if (this.fireCounter.run()) {
+//            EnemyBullet bullet = GameObject.recycle(EnemyBullet.class);
+//            bullet.position.set(this.position);
+//            bullet.direction = this.direction;
+//            if (this.direction == 1) {
+//                bullet.velocity.set(0,-5);
+//            }
+//            if (this.direction == 2) {
+//                bullet.velocity.set(0,5);
+//            }
+//            if (this.direction == 3) {
+//                bullet.velocity.set(-5, 0);
+//            }
+//            if (this.direction == 4) {
+//                bullet.velocity.set(5,0);
+//            }
+//        }
+//    }
     private void fire() {
+        EnemyBullet enemyBullet = GameObject.recycle(EnemyBullet.class);
+        enemyBullet.position.set(this.position);
+        enemyBullet.direction = this.direction;
+        this.fireCounter.reset();
     }
 
     public void takeDamage (int damage) {

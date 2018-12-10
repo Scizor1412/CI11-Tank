@@ -3,6 +3,7 @@ package base.game;
 
 import base.GameObject;
 import base.BackGround;
+import base.Obstructor.Wall;
 import base.enemy.Enemy;
 import base.enemy.EnemySummoner;
 import base.player.Player;
@@ -17,6 +18,7 @@ public class GameCanvas extends JPanel {
         this.setPreferredSize(new Dimension(Settings.SCREEN_WIDTH, Settings.SCREEN_HEIGHT));
         Player player = GameObject.recycle(Player.class);
         EnemySummoner enemySummoner = GameObject.recycle((EnemySummoner.class));
+        Wall wall = GameObject.recycle(Wall.class);
 
 //        SceneManager.signNewScene(new MenuScene());
     }

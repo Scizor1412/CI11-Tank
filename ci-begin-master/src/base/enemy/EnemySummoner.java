@@ -16,7 +16,7 @@ public class EnemySummoner extends GameObject implements Physics {
 
     public EnemySummoner() {
         this.boxCollider = new BoxCollider(this.position, 20, 40);
-        this.position.set(-20, 10);
+        this.position.set(200, 300);
         this.renderer = new BoxRenderer(this.boxCollider, Color.WHITE, true);
         this.actionSummon = this.Summon();
     }
@@ -28,6 +28,7 @@ public class EnemySummoner extends GameObject implements Physics {
             public boolean run(GameObject master) {
                 Enemy enemy = GameObject.recycle(Enemy.class);
                 enemy.position.set(master.position.add(20,0));
+                enemy.direction = (int) (Math.random()*4 +1);
                 return true;
             }
 
