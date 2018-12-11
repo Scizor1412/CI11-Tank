@@ -15,7 +15,7 @@ public class PlayerBullet extends GameObject implements Physics {
 
     public PlayerBullet() {
         super();
-        this.boxCollider = new BoxCollider(this.position, 24, 24);
+        this.boxCollider = new BoxCollider(this.position, 20, 20);
         this.renderer = new BoxRenderer(this.boxCollider, Color.RED, true);
         this.damage = 3;
     }
