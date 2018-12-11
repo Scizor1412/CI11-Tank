@@ -2,8 +2,6 @@ package base.Scene;
 
 import base.CoverGameOverScene;
 import base.GameObject;
-import base.Renderer.SingleImageRenderer;
-import base.game.Settings;
 
 public class GameOverScene extends Scene {
 

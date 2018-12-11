@@ -1,13 +1,12 @@
 package base.player;
 
 import base.GameObject;
-import base.Renderer.BoxRenderer;
+import base.renderer.BoxRenderer;
 import base.enemy.Enemy;
 import base.game.Settings;
 import base.physics.BoxCollider;
 import base.physics.Physics;
 
-import javax.swing.*;
 import java.awt.*;
 
 public class PlayerBullet extends GameObject implements Physics {

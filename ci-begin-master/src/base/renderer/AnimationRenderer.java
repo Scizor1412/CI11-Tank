@@ -1,4 +1,4 @@
-package base.Renderer;
+package base.renderer;
 
 import base.FrameCounter;
 import base.GameObject;

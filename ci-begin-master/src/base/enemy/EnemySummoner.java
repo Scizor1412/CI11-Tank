@@ -1,10 +1,10 @@
 package base.enemy;
 
-import base.Action.Action;
-import base.Action.ActionRepeat;
-import base.Action.ActionWait;
+import base.action.Action;
+import base.action.ActionRepeat;
+import base.action.ActionWait;
 import base.GameObject;
-import base.Renderer.BoxRenderer;
+import base.renderer.BoxRenderer;
 import base.physics.BoxCollider;
 import base.physics.Physics;
 

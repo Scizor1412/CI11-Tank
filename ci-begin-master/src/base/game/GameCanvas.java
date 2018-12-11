@@ -3,8 +3,7 @@ package base.game;
 
 import base.GameObject;
 import base.BackGround;
-import base.Obstructor.Wall;
-import base.enemy.Enemy;
+import base.obstructor.Wall;
 import base.enemy.EnemySummoner;
 import base.player.Player;
 

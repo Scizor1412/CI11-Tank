@@ -1,12 +1,10 @@
 package base;
 
-import base.Renderer.Renderer;
-import base.game.Settings;
+import base.renderer.Renderer;
 import base.physics.BoxCollider;
 import base.physics.Physics;
 
 import java.awt.*;
-import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
 public class GameObject {

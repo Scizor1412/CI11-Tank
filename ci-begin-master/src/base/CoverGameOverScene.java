@@ -1,7 +1,6 @@
 package base;
 
-import base.Renderer.SingleImageRenderer;
-import base.Scene.SceneManager;
+import base.renderer.SingleImageRenderer;
 //import base.Scene.SceneStage1;
 import base.game.Settings;
 

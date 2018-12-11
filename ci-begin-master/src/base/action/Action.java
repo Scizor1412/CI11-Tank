@@ -1,4 +1,4 @@
-package base.Action;
+package base.action;
 
 import base.GameObject;
 

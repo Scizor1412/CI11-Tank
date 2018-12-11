@@ -1,22 +1,14 @@
 package base.enemy;
 
-import base.Action.Action;
-import base.Action.ActionParallel;
 import base.FrameCounter;
 import base.GameObject;
-import base.Renderer.AnimationRenderer;
-import base.Renderer.BoxRenderer;
-import base.Renderer.SingleImageRenderer;
-import base.game.GameCanvas;
+import base.obstructor.Wall;
+import base.renderer.BoxRenderer;
 import base.game.Settings;
 import base.physics.BoxCollider;
 import base.physics.Physics;
-import base.player.PlayerBullet;
-import tklibs.SpriteUtils;
 
 import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.util.ArrayList;
 
 public class Enemy extends GameObject implements Physics {
     BoxCollider boxCollider;
@@ -52,15 +44,35 @@ public class Enemy extends GameObject implements Physics {
         if (this.moveCounter.run()) {
             if (this.direction == 1) {
                 this.position.addThis(0, -Settings.WAY_SIZE/2);
+                Wall wall = GameObject.intersects(Wall.class, this.boxCollider);
+                if (wall != null){
+                    this.position.substractThis(0, -Settings.WAY_SIZE/2);
+                    this.direction = (int) (Math.random()*4 + 1);
+                }
             }
             if (this.direction == 2) {
                 this.position.addThis(0, Settings.WAY_SIZE/2);
+                Wall wall = GameObject.intersects(Wall.class, this.boxCollider);
+                if (wall != null){
+                    this.position.substractThis(0, Settings.WAY_SIZE/2);
+                    this.direction = (int) (Math.random()*4 + 1);
+                }
             }
             if (this.direction == 3) {
                 this.position.addThis(-Settings.WAY_SIZE/2, 0);
+                Wall wall = GameObject.intersects(Wall.class, this.boxCollider);
+                if (wall != null){
+                    this.position.substractThis(-Settings.WAY_SIZE/2, 0);
+                    this.direction = (int) (Math.random()*4 + 1);
+                }
             }
             if (this.direction == 4) {
                 this.position.addThis(Settings.WAY_SIZE/2, 0);
+                Wall wall = GameObject.intersects(Wall.class, this.boxCollider);
+                if (wall != null){
+                    this.position.substractThis(Settings.WAY_SIZE/2, 0);
+                    this.direction = (int) (Math.random()*4 + 1);
+                }
             }
             this.moveCounter.reset();
         }
