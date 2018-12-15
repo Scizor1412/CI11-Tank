@@ -4,6 +4,8 @@ import base.Background;
 import base.GameObject;
 import base.enemy.EnemySummoner;
 import base.maps.Map;
+import base.menu.MenuLife;
+import base.menu.MenuScore;
 import base.obstructor.Wall;
 import base.player.Player;
 
@@ -24,6 +26,8 @@ public class SceneStage1 extends Scene {
         enemySummoner.position.set(620, 0);
         Map map = Map.load("assets/Image/map/tank..json");
         map.generate();
+        MenuScore menuScore = GameObject.recycle(MenuScore.class);
+        MenuLife menuLife = GameObject.recycle(MenuLife.class);
     }
 
     @Override
