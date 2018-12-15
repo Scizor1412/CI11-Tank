@@ -1,10 +1,11 @@
 package base.enemy;
 
 import base.GameObject;
-import base.renderer.BoxRenderer;
 import base.game.Settings;
+import base.obstructor.Wall;
 import base.physics.BoxCollider;
 import base.physics.Physics;
+import base.renderer.BoxRenderer;
 
 import java.awt.*;
 
@@ -24,6 +25,18 @@ public class EnemyBullet extends GameObject implements Physics {
         super.run();
         this.move();
         this.destroyIfNeeded();
+        this.hitPlayer();
+        this.hitWall();
+    }
+
+    private void hitPlayer() {
+    }
+
+    private void hitWall() {
+        Wall wall = GameObject.intersects(Wall.class, this.boxCollider);
+        if (wall != null) {
+            this.destroy();
+        }
     }
 
     private void move() {

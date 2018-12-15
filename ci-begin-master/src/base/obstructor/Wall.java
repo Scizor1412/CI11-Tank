@@ -1,6 +1,8 @@
 package base.obstructor;
 
 import base.GameObject;
+import base.player.Player;
+import base.player.PlayerBullet;
 import base.renderer.BoxRenderer;
 import base.game.Settings;
 import base.physics.BoxCollider;
@@ -24,7 +26,14 @@ public class Wall extends GameObject implements Physics {
     @Override
     public void run() {
         super.run();
-        this.destroyIfNeeded();
+    }
+
+    public void takeDamage(int damage) {
+        this.hp -= damage;
+        if (hp <= 0) {
+            this.hp = 0;
+            this.destroy();
+        }
     }
 
     private void destroyIfNeeded() {
@@ -35,3 +44,4 @@ public class Wall extends GameObject implements Physics {
         return this.boxCollider;
     }
 }
+

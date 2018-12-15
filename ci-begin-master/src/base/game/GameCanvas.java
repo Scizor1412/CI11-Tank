@@ -1,10 +1,10 @@
 package base.game;
 
 
-import base.GameObject;
 import base.BackGround;
-import base.obstructor.Wall;
+import base.GameObject;
 import base.enemy.EnemySummoner;
+import base.obstructor.Wall;
 import base.player.Player;
 
 import javax.swing.*;

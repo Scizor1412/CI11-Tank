@@ -2,11 +2,11 @@ package base.enemy;
 
 import base.FrameCounter;
 import base.GameObject;
-import base.obstructor.Wall;
-import base.renderer.BoxRenderer;
 import base.game.Settings;
+import base.obstructor.Wall;
 import base.physics.BoxCollider;
 import base.physics.Physics;
+import base.renderer.BoxRenderer;
 
 import java.awt.*;
 

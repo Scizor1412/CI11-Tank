@@ -3,15 +3,12 @@ package base.player;
 import base.FrameCounter;
 import base.GameObject;
 import base.KeyEventPress;
-import base.enemy.Enemy;
-import base.obstructor.Wall;
-import base.renderer.BoxRenderer;
 import base.game.Settings;
+import base.obstructor.Wall;
 import base.physics.BoxCollider;
 import base.physics.Physics;
 import tklibs.SpriteUtils;
 
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
@@ -50,11 +47,11 @@ public class Player extends GameObject implements Physics {
     private void turn() {
         if(KeyEventPress.isUpPress) { this.direction = 1; }
 
-        if(KeyEventPress.isDownPress) { this.direction = 2; }
+        else if(KeyEventPress.isDownPress) { this.direction = 2; }
 
-        if(KeyEventPress.isLeftPress) { this.direction = 3; }
+        else if(KeyEventPress.isLeftPress) { this.direction = 3; }
 
-        if(KeyEventPress.isRightPress) { this.direction = 4; }
+        else if(KeyEventPress.isRightPress) { this.direction = 4; }
     }
 
     private void move() {
@@ -67,7 +64,7 @@ public class Player extends GameObject implements Physics {
                 }
             }
 
-            if(KeyEventPress.isDownPress) {
+            else if(KeyEventPress.isDownPress) {
                 this.position.addThis(0, Settings.WAY_SIZE/2);
                 Wall wall = GameObject.intersects(Wall.class, this.boxCollider);
                 if (wall != null){
@@ -75,7 +72,7 @@ public class Player extends GameObject implements Physics {
                 }
             }
 
-            if(KeyEventPress.isLeftPress) {
+            else if(KeyEventPress.isLeftPress) {
                 this.position.addThis(-Settings.WAY_SIZE/2, 0);
                 Wall wall = GameObject.intersects(Wall.class, this.boxCollider);
                 if (wall != null){
@@ -83,7 +80,7 @@ public class Player extends GameObject implements Physics {
                 }
             }
 
-            if(KeyEventPress.isRightPress) {
+            else if(KeyEventPress.isRightPress) {
                 this.position.addThis(Settings.WAY_SIZE/2, 0);
                 Wall wall = GameObject.intersects(Wall.class, this.boxCollider);
                 if (wall != null){

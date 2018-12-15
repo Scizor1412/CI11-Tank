@@ -1,6 +1,7 @@
 package base.player;
 
 import base.GameObject;
+import base.obstructor.Wall;
 import base.renderer.BoxRenderer;
 import base.enemy.Enemy;
 import base.game.Settings;
@@ -11,25 +12,34 @@ import java.awt.*;
 
 public class PlayerBullet extends GameObject implements Physics {
     BoxCollider boxCollider;
-    int damage;
+    public int damage;
 
     public PlayerBullet() {
         super();
         this.boxCollider = new BoxCollider(this.position, this.anchor, 20, 20);
         this.renderer = new BoxRenderer(this.boxCollider, Color.RED, true);
-        this.damage = 3;
+        this.damage = 1;
     }
 
     public void run() {
         super.run();
         this.hitEnemy();
         this.destroyIfNeeded();
+        this.hitWall();
     }
 
     private void hitEnemy() {
         Enemy enemy = GameObject.intersects(Enemy.class, this.boxCollider);
         if (enemy != null) {
             enemy.takeDamage(this.damage);
+            this.destroy();
+        }
+    }
+
+    private void hitWall() {
+        Wall wall = GameObject.intersects(Wall.class, this.boxCollider);
+        if (wall != null) {
+            wall.takeDamage(this.damage);
             this.destroy();
         }
     }
