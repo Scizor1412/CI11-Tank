@@ -136,4 +136,11 @@ public class Player extends GameObject implements Physics {
         super.destroy();
         SceneManager.signNewScene(new GameOverScene());
     }
+
+    public void takeDamage(int damage) {
+        this.hp -= damage;
+        if (this.hp <= 0) {
+            this.destroy();
+        }
+    }
 }
