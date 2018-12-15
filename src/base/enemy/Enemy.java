@@ -25,7 +25,6 @@ public class Enemy extends GameObject implements Physics {
 
     public Enemy() {
         super();
-        this.anchor.set(0,0);
         this.boxCollider = new BoxCollider(this.position, this.anchor, 15, 15);
         this.createRenderer();
 //        this.renderer = new BoxRenderer(this.boxCollider, Color.BLUE, true);
