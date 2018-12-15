@@ -8,6 +8,8 @@ import base.game.Settings;
 import base.obstructor.Wall;
 import base.physics.BoxCollider;
 import base.physics.Physics;
+import base.scene.GameOverScene;
+import base.scene.SceneManager;
 import tklibs.SpriteUtils;
 
 import java.awt.image.BufferedImage;
@@ -18,6 +20,7 @@ public class Player extends GameObject implements Physics {
     FrameCounter moveCounter;
     int direction;
     FrameCounter fireCounter;
+    public int hp;
 
     public Player() {
         this.position.set(16, 586);
@@ -26,12 +29,14 @@ public class Player extends GameObject implements Physics {
         this.moveCounter = new FrameCounter(4);
         this.fireCounter = new FrameCounter(15);
         this.direction = 1;
+        this.hp = 3;
     }
 
     private void createRenderer() {
         ArrayList<BufferedImage> images = new ArrayList<>();
-        images.add(SpriteUtils.loadImage("assets/Image/player/1/tank_player1_left_c0_t1_s1.png"));
-        images.add(SpriteUtils.loadImage("assets/Image/player/1/tank_player1_left_c0_t2_s1.png"));
+        images.add(SpriteUtils.loadImage("F:\\Project-CI\\CI11-Tank\\ci-begin-master\\assets\\Image\\player\\1\\tank_player1_left_c0_t1_s1.png"));
+        images.add(SpriteUtils.loadImage("F:\\Project-CI\\CI11-Tank\\ci-begin-master\\assets\\Image\\player\\1\\tank_player1_left_c0_t1_s1.png"));
+
         this.renderer = new PlayerAnimator(images, 5);
     }
 
@@ -121,5 +126,11 @@ public class Player extends GameObject implements Physics {
     @Override
     public BoxCollider getBoxCollider() {
         return this.boxCollider;
+    }
+
+    @Override
+    public void destroy() {
+        super.destroy();
+        SceneManager.signNewScene(new GameOverScene());
     }
 }

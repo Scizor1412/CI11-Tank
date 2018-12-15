@@ -8,8 +8,11 @@ import base.obstructor.Wall;
 import base.physics.BoxCollider;
 import base.physics.Physics;
 import base.renderer.BoxRenderer;
+import tklibs.SpriteUtils;
 
 import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.util.ArrayList;
 
 public class Enemy extends GameObject implements Physics {
     BoxCollider boxCollider;
@@ -24,12 +27,20 @@ public class Enemy extends GameObject implements Physics {
         super();
         this.anchor.set(0,0);
         this.boxCollider = new BoxCollider(this.position, this.anchor, 15, 15);
-        this.renderer = new BoxRenderer(this.boxCollider, Color.BLUE, true);
+        this.createRenderer();
+//        this.renderer = new BoxRenderer(this.boxCollider, Color.BLUE, true);
         this.hp = 3;
         this.immune = false;
-        this.immuneCounter = new FrameCounter(60);
+        this.immuneCounter = new FrameCounter(20);
         this.moveCounter = new FrameCounter(6);
         this.fireCounter = new FrameCounter(10);
+    }
+
+    private void createRenderer() {
+        ArrayList<BufferedImage> images = new ArrayList<>();
+        images.add(SpriteUtils.loadImage("assets/Image/enemy/1/tank_armor_left_c1_t1.png"));
+        images.add(SpriteUtils.loadImage("assets/Image/enemy/1/tank_armor_left_c1_t2.png"));
+        this.renderer = new EnemyAnimator(images, 5);
     }
 
     @Override
@@ -125,6 +136,13 @@ public class Enemy extends GameObject implements Physics {
             this.immune = true;
             this.immuneCounter.reset();
         }
+    }
+
+    @Override
+    public void destroy() {
+        super.destroy();
+        EnemyExplosion explosion = GameObject.recycle(EnemyExplosion.class);
+        explosion.position.set(this.position);
     }
 
     @Override
