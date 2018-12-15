@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< HEAD
   <component name="ChangeListManager">
-    <list default="true" id="e56c1186-4bc4-4c61-8ffc-e90fb06d244a" name="Default Changelist" comment="">
+    <list default="true" id="0c03410b-21ef-427d-a184-cf70d0377690" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/enemy/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/enemy/Enemy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/enemy/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/enemy/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/game/Platform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/game/Platform.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/BackGround.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/Program.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/enemy/Enemy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/enemy/EnemyBullet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/enemy/EnemyExplosion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/enemy/EnemySummoner$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/enemy/EnemySummoner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/game/GameCanvas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/game/GameWindow$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/game/GameWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/game/Platform.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/game/Settings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/player/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/player/PlayerBullet.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,19 +29,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/base/GameObject.java">
+        <entry file="file://$PROJECT_DIR$/src/base/player/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="54" column="75" selection-start-line="54" selection-start-column="75" selection-end-line="54" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/base/obstructor/Wall.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="-486">
+              <caret line="88" column="45" selection-start-line="85" selection-start-column="16" selection-end-line="88" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -40,57 +40,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/base/game/Platform.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="-350">
               <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/base/enemy/Enemy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="80" column="45" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
-              <folding>
-                <element signature="e#6744#6745#0" expanded="true" />
-                <element signature="e#6783#6784#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-72">
+              <caret line="85" column="45" selection-start-line="85" selection-start-column="45" selection-end-line="85" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/base/enemy/EnemyBullet.java">
+        <entry file="file://$PROJECT_DIR$/src/base/Background.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-486">
-              <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-              <folding>
-                <element signature="e#2685#2686#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/base/player/Player.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="88" column="45" lean-forward="true" selection-start-line="85" selection-start-column="16" selection-end-line="88" selection-end-column="45" />
-              <folding>
-                <element signature="e#4076#4077#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/base/player/PlayerBullet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
-              <folding>
-                <element signature="e#2117#2118#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -103,25 +81,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/tklibs/SpriteUtils.java" />
-        <option value="$PROJECT_DIR$/src/base/player/PlayerBullet.java" />
-        <option value="$PROJECT_DIR$/src/base/GameObject.java" />
-        <option value="$PROJECT_DIR$/src/base/CoverMenuScene.java" />
-        <option value="$PROJECT_DIR$/src/base/CoverGameOverScene.java" />
-        <option value="$PROJECT_DIR$/src/base/enemy/EnemyBullet.java" />
-        <option value="$PROJECT_DIR$/src/base/player/Player.java" />
-        <option value="$PROJECT_DIR$/src/base/game/Platform.java" />
-        <option value="$PROJECT_DIR$/src/base/enemy/Enemy.java" />
+        <option value="$PROJECT_DIR$/src/base/enemy/EnemyExplosion.java" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
       </list>
-=======
-  <component name="GradleLocalSettings">
-    <option name="projectSyncType">
-      <map>
-        <entry key="F:/Word2VecJava 2" value="PREVIEW" />
-        <entry key="F:/hung3" value="PREVIEW" />
-        <entry key="F:/kien" value="PREVIEW" />
-      </map>
->>>>>>> 6de6ebdfae600d335144e290afefa14ed462f0aa
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -130,18 +92,160 @@
     <option name="width" value="1024" />
     <option name="height" value="688" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ci-begin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ci-begin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ci-begin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ci-begin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="Image" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ci-begin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="Image" type="462c0819:PsiDirectoryNode" />
+              <item name="background" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ci-begin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="Image" type="462c0819:PsiDirectoryNode" />
+              <item name="objects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ci-begin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="Image" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ci-begin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="Image" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+              <item name="1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ci-begin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ci-begin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ci-begin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ci-begin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="enemy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ci-begin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ci-begin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="maps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ci-begin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="obstructor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ci-begin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="physics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ci-begin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ci-begin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="scene" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-<<<<<<< HEAD
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544910664481" />
-=======
->>>>>>> 6de6ebdfae600d335144e290afefa14ed462f0aa
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544911289597" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -163,176 +267,163 @@
       </list>
     </recent_temporary>
   </component>
-<<<<<<< HEAD
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e56c1186-4bc4-4c61-8ffc-e90fb06d244a" name="Default Changelist" comment="" />
-      <created>1544902207047</created>
+      <changelist id="0c03410b-21ef-427d-a184-cf70d0377690" name="Default Changelist" comment="" />
+      <created>1544910426488</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1544902207047</updated>
+      <updated>1544910426488</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.3297587" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32850242" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.3297587" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/base/Program.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/ArrayList.java" />
+    <entry file="file://$PROJECT_DIR$/src/base/maps/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tklibs/SpriteUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/renderer/SingleImageRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="306">
+          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
           <folding>
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/physics/BoxCollider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/obstructor/Wall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/GameObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="54" column="75" selection-start-line="54" selection-start-column="75" selection-end-line="54" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/scene/MenuScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/CoverGameOverScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="85" selection-start-line="11" selection-start-column="85" selection-end-line="11" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/CoverMenuScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="86" selection-start-line="12" selection-start-column="86" selection-end-line="12" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/enemy/EnemyBullet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-486">
-          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-          <folding>
-            <element signature="e#2685#2686#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/game/Platform.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/player/PlayerBullet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
-          <folding>
-            <element signature="e#2117#2118#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/base/player/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="88" column="45" lean-forward="true" selection-start-line="85" selection-start-column="16" selection-end-line="88" selection-end-column="45" />
-          <folding>
-            <element signature="e#4076#4077#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-486">
+          <caret line="88" column="45" selection-start-line="85" selection-start-column="16" selection-end-line="88" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/enemy/Enemy.java">
+    <entry file="file://$PROJECT_DIR$/src/base/scene/GameOverScene.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="80" column="45" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
-          <folding>
-            <element signature="e#6744#6745#0" expanded="true" />
-            <element signature="e#6783#6784#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/base/CoverGameOverScene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/base/enemy/EnemyExplosion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
         </state>
       </provider>
     </entry>
   </component>
-=======
->>>>>>> 6de6ebdfae600d335144e290afefa14ed462f0aa
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>ci-begin-master</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>com.google.code.gson:gson:2.8.5</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
