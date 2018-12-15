@@ -1,4 +1,4 @@
-package base.Scene;
+package base.scene;
 
 import base.CoverMenuScene;
 import base.GameObject;

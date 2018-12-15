@@ -1,6 +1,10 @@
 import base.game.GameCanvas;
 import base.game.GameWindow;
 import base.game.Settings;
+import base.maps.Layer;
+import base.maps.Map;
+import com.google.gson.Gson;
+import tklibs.Utils;
 
 import java.awt.*;
 
@@ -14,5 +18,7 @@ public class Program {
         window.pack();
         window.setVisible(true);
         canvas.gameLoop();
+
+
     }
 }

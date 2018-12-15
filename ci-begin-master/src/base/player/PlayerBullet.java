@@ -1,6 +1,7 @@
 package base.player;
 
 import base.GameObject;
+import base.game.Platform;
 import base.obstructor.Wall;
 import base.renderer.BoxRenderer;
 import base.enemy.Enemy;
@@ -37,10 +38,12 @@ public class PlayerBullet extends GameObject implements Physics {
     }
 
     private void hitWall() {
-        Wall wall = GameObject.intersects(Wall.class, this.boxCollider);
-        if (wall != null) {
-            wall.takeDamage(this.damage);
-            this.destroy();
+        Platform platform = GameObject.intersects(Platform.class, this.boxCollider);
+        if (platform != null) {
+            if (platform.platformType == 2 || platform.platformType == 3) {
+                platform.takeDamage(this.damage);
+                this.destroy();
+            }
         }
     }
 

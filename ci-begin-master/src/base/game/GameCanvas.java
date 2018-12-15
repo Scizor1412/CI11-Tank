@@ -1,9 +1,10 @@
 package base.game;
 
 
-import base.BackGround;
+import base.Background;
 import base.GameObject;
 import base.enemy.EnemySummoner;
+import base.maps.Map;
 import base.obstructor.Wall;
 import base.player.Player;
 
@@ -13,12 +14,17 @@ import java.awt.*;
 public class GameCanvas extends JPanel {
 
     public GameCanvas(){
-        BackGround backGround = GameObject.recycle(BackGround.class);
+        Background backGround = GameObject.recycle(Background.class);
         this.setPreferredSize(new Dimension(Settings.SCREEN_WIDTH, Settings.SCREEN_HEIGHT));
         Player player = GameObject.recycle(Player.class);
-        EnemySummoner enemySummoner = GameObject.recycle((EnemySummoner.class));
+        EnemySummoner enemySummoner = GameObject.recycle(EnemySummoner.class);
+        enemySummoner.position.set (-20, 0);
+        EnemySummoner enemySummoner1 = GameObject.recycle(EnemySummoner.class);
+        enemySummoner.position.set (620, 0);
         Wall wall = GameObject.recycle(Wall.class);
 
+        Map map = Map.load("assets/Image/map/tank..json");
+        map.generate();
 //        SceneManager.signNewScene(new MenuScene());
     }
 

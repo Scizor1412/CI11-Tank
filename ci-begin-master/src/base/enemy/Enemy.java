@@ -2,6 +2,7 @@ package base.enemy;
 
 import base.FrameCounter;
 import base.GameObject;
+import base.game.Platform;
 import base.game.Settings;
 import base.obstructor.Wall;
 import base.physics.BoxCollider;
@@ -21,6 +22,7 @@ public class Enemy extends GameObject implements Physics {
 
     public Enemy() {
         super();
+        this.anchor.set(0,0);
         this.boxCollider = new BoxCollider(this.position, this.anchor, 15, 15);
         this.renderer = new BoxRenderer(this.boxCollider, Color.BLUE, true);
         this.hp = 3;
@@ -44,34 +46,42 @@ public class Enemy extends GameObject implements Physics {
         if (this.moveCounter.run()) {
             if (this.direction == 1) {
                 this.position.addThis(0, -Settings.WAY_SIZE/2);
-                Wall wall = GameObject.intersects(Wall.class, this.boxCollider);
-                if (wall != null){
-                    this.position.substractThis(0, -Settings.WAY_SIZE/2);
-                    this.direction = (int) (Math.random()*4 + 1);
+                Platform platform = GameObject.intersects(Platform.class, this.boxCollider);
+                if (platform != null){
+                    if (platform.platformType != 4) {
+                        this.position.substractThis(0, -Settings.WAY_SIZE/2);
+                        this.direction = (int) (Math.random()*4 + 1);
+                    }
                 }
             }
             if (this.direction == 2) {
                 this.position.addThis(0, Settings.WAY_SIZE/2);
-                Wall wall = GameObject.intersects(Wall.class, this.boxCollider);
-                if (wall != null){
-                    this.position.substractThis(0, Settings.WAY_SIZE/2);
-                    this.direction = (int) (Math.random()*4 + 1);
+                Platform platform = GameObject.intersects(Platform.class, this.boxCollider);
+                if (platform != null){
+                    if (platform.platformType != 4) {
+                        this.position.substractThis(0, Settings.WAY_SIZE/2);
+                        this.direction = (int) (Math.random()*4 + 1);
+                    }
                 }
             }
             if (this.direction == 3) {
                 this.position.addThis(-Settings.WAY_SIZE/2, 0);
-                Wall wall = GameObject.intersects(Wall.class, this.boxCollider);
-                if (wall != null){
-                    this.position.substractThis(-Settings.WAY_SIZE/2, 0);
-                    this.direction = (int) (Math.random()*4 + 1);
+                Platform platform = GameObject.intersects(Platform.class, this.boxCollider);
+                if (platform != null){
+                    if (platform.platformType != 4) {
+                        this.position.substractThis(-Settings.WAY_SIZE/2, 0);
+                        this.direction = (int) (Math.random()*4 + 1);
+                    }
                 }
             }
             if (this.direction == 4) {
                 this.position.addThis(Settings.WAY_SIZE/2, 0);
-                Wall wall = GameObject.intersects(Wall.class, this.boxCollider);
-                if (wall != null){
-                    this.position.substractThis(Settings.WAY_SIZE/2, 0);
-                    this.direction = (int) (Math.random()*4 + 1);
+                Platform platform = GameObject.intersects(Platform.class, this.boxCollider);
+                if (platform != null){
+                    if (platform.platformType != 4) {
+                        this.position.substractThis(Settings.WAY_SIZE/2, 0);
+                        this.direction = (int) (Math.random()*4 + 1);
+                    }
                 }
             }
             this.moveCounter.reset();

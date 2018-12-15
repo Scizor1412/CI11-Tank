@@ -3,6 +3,7 @@ package base.player;
 import base.FrameCounter;
 import base.GameObject;
 import base.KeyEventPress;
+import base.game.Platform;
 import base.game.Settings;
 import base.obstructor.Wall;
 import base.physics.BoxCollider;
@@ -19,7 +20,7 @@ public class Player extends GameObject implements Physics {
     FrameCounter fireCounter;
 
     public Player() {
-        this.position.set(210, 310);
+        this.position.set(16, 586);
         this.boxCollider = new BoxCollider(this.position, this.anchor, 16, 16);
         this.createRenderer();
         this.moveCounter = new FrameCounter(4);
@@ -58,33 +59,41 @@ public class Player extends GameObject implements Physics {
         if (moveCounter.run()) {
             if(KeyEventPress.isUpPress) {
                 this.position.addThis(0, -Settings.WAY_SIZE/2);
-                Wall wall = GameObject.intersects(Wall.class, this.boxCollider);
-                if (wall != null){
-                    this.position.substractThis(0, -Settings.WAY_SIZE/2);
+                Platform platform = GameObject.intersects(Platform.class, this.boxCollider);
+                if (platform != null){
+                    if (platform.platformType != 4) {
+                        this.position.substractThis(0, -Settings.WAY_SIZE/2);
+                    }
                 }
             }
 
             else if(KeyEventPress.isDownPress) {
                 this.position.addThis(0, Settings.WAY_SIZE/2);
-                Wall wall = GameObject.intersects(Wall.class, this.boxCollider);
-                if (wall != null){
-                    this.position.substractThis(0, Settings.WAY_SIZE/2);
+                Platform platform = GameObject.intersects(Platform.class, this.boxCollider);
+                if (platform != null){
+                    if (platform.platformType != 4) {
+                        this.position.substractThis(0, Settings.WAY_SIZE/2);
+                    }
                 }
             }
 
             else if(KeyEventPress.isLeftPress) {
                 this.position.addThis(-Settings.WAY_SIZE/2, 0);
-                Wall wall = GameObject.intersects(Wall.class, this.boxCollider);
-                if (wall != null){
-                    this.position.substractThis(-Settings.WAY_SIZE/2, 0);
+                Platform platform = GameObject.intersects(Platform.class, this.boxCollider);
+                if (platform != null){
+                    if (platform.platformType != 4) {
+                        this.position.substractThis(-Settings.WAY_SIZE/2, 0);
+                    }
                 }
             }
 
             else if(KeyEventPress.isRightPress) {
                 this.position.addThis(Settings.WAY_SIZE/2, 0);
-                Wall wall = GameObject.intersects(Wall.class, this.boxCollider);
-                if (wall != null){
-                    this.position.substractThis(Settings.WAY_SIZE/2, 0);
+                Platform platform = GameObject.intersects(Platform.class, this.boxCollider);
+                if (platform != null){
+                    if (platform.platformType != 4) {
+                        this.position.substractThis(Settings.WAY_SIZE/2, 0);
+                    }
                 }
             }
             moveCounter.reset();

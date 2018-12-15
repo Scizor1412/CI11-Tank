@@ -1,7 +1,7 @@
 package base;
 
 import base.renderer.SingleImageRenderer;
-//import base.Scene.SceneStage1;
+//import base.scene.SceneStage1;
 import base.game.Settings;
 
 public class CoverMenuScene extends GameObject {
