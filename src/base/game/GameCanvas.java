@@ -1,12 +1,7 @@
 package base.game;
 
 
-import base.Background;
 import base.GameObject;
-import base.enemy.EnemySummoner;
-import base.maps.Map;
-import base.obstructor.Wall;
-import base.player.Player;
 import base.scene.MenuScene;
 import base.scene.SceneManager;
 

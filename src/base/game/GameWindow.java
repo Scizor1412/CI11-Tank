@@ -10,7 +10,7 @@ public class GameWindow extends JFrame {
     public GameWindow() {
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 //        this.setSize(Settings.SCREEN_WIDTH, Settings.SCREEN_HEIGHT);
-        this.setTitle("Game Touhou");
+        this.setTitle("Game Tank");
         this.setResizable(false);
         this.addKeyEvent();
     }
