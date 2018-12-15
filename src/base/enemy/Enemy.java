@@ -26,16 +26,10 @@ public class Enemy extends GameObject implements Physics {
 
     public Enemy() {
         super();
-<<<<<<< Updated upstream
         this.anchor.set(0,0);
         this.boxCollider = new BoxCollider(this.position, this.anchor, 15, 15);
         this.createRenderer();
 //        this.renderer = new BoxRenderer(this.boxCollider, Color.BLUE, true);
-=======
-
-        this.boxCollider = new BoxCollider(this.position, this.anchor, 32, 32);
-        this.createrenderer();
->>>>>>> Stashed changes
         this.hp = 3;
         this.immune = false;
         this.immuneCounter = new FrameCounter(20);

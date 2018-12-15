@@ -3,15 +3,9 @@ package base.game;
 import java.awt.event.KeyEvent;
 
 public class Settings {
-<<<<<<< Updated upstream
     public static int SCREEN_WIDTH = 600;
     public static int SCREEN_HEIGHT = 600;
     public static int WAY_SIZE = 30;
-=======
-    public static int SCREEN_WIDTH = 500;
-    public static int SCREEN_HEIGHT = 400;
-    public static int WAY_SIZE = 20;
->>>>>>> Stashed changes
     public static int ROW_COUNT = SCREEN_HEIGHT/WAY_SIZE;
     public static int COLUMN_COUNT = SCREEN_WIDTH/WAY_SIZE;
     public static int UP_BUTTON = KeyEvent.VK_W;

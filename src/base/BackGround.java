@@ -4,7 +4,7 @@ import base.game.Settings;
 
 import java.awt.*;
 
-public class Background extends GameObject{
+public class BackGround extends GameObject{
     @Override
     public void render(Graphics g) {
         g.setColor(Color.LIGHT_GRAY);
