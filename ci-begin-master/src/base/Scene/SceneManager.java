@@ -1,4 +1,4 @@
-package base.Scene;
+package base.scene;
 
 public class SceneManager {
     public static Scene currentScene;
