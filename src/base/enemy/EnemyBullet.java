@@ -5,8 +5,10 @@ import base.renderer.BoxRenderer;
 import base.game.Settings;
 import base.physics.BoxCollider;
 import base.physics.Physics;
+import tklibs.SpriteUtils;
 
 import java.awt.*;
+import java.awt.image.BufferedImage;
 
 public class EnemyBullet extends GameObject implements Physics {
     BoxCollider boxCollider;
@@ -14,9 +16,15 @@ public class EnemyBullet extends GameObject implements Physics {
 
     public EnemyBullet() {
         super();
-        this.boxCollider = new BoxCollider(this.position, this.anchor,30, 30);
-        this.renderer = new BoxRenderer(this.boxCollider, Color.LIGHT_GRAY, true);
+        this.boxCollider = new BoxCollider(this.position, this.anchor,8, 8);
+        //this.renderer = new BoxRenderer(this.boxCollider, Color.LIGHT_GRAY, true);
+        this.createrenderer();
 
+    }
+
+    private void createrenderer() {
+        BufferedImage image = SpriteUtils.loadImage("assets/Image/bullet/bullet_left.png");
+        this.renderer=new EnemyBulletDirection(image);
     }
 
     @Override

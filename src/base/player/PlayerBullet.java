@@ -12,6 +12,7 @@ import tklibs.SpriteUtils;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.util.ArrayList;
 
 public class PlayerBullet extends GameObject implements Physics {
     BoxCollider boxCollider;
@@ -26,35 +27,15 @@ public class PlayerBullet extends GameObject implements Physics {
     }
 
     private void createrenderer() {
-        this.turn();
-        BufferedImage image1 = SpriteUtils.loadImage("F:\\Tank-fix-box-collider&rotate-image\\ci-begin-master\\assets\\Image\\bullet\\bullet_up.png");
-        BufferedImage image2 = SpriteUtils.loadImage("F:\\Tank-fix-box-collider&rotate-image\\ci-begin-master\\assets\\Image\\bullet\\bullet_down.png");
-        BufferedImage image3 = SpriteUtils.loadImage("F:\\Tank-fix-box-collider&rotate-image\\ci-begin-master\\assets\\Image\\bullet\\bullet_left.png");
-        BufferedImage image4 = SpriteUtils.loadImage("F:\\Tank-fix-box-collider&rotate-image\\ci-begin-master\\assets\\Image\\bullet\\bullet_right.png");
-            this.renderer = new SingleImageRenderer(image1);
+        BufferedImage image = SpriteUtils.loadImage("assets/Image/bullet/bullet_left.png");
+        this.renderer = new PlayerBulletDirection(image);
     }
-
-    private void turn() {
-        if (KeyEventPress.isUpPress) {
-            this.direction = 1;
-        }
-        if (KeyEventPress.isDownPress) {
-            this.direction = 2;
-        }
-        if (KeyEventPress.isLeftPress) {
-            this.direction = 3;
-        }
-
-        if (KeyEventPress.isRightPress) {
-            this.direction = 4;
-        }
-    }
-
     public void run() {
         super.run();
         this.hitEnemy();
         this.destroyIfNeeded();
     }
+
 
     private void hitEnemy() {
         Enemy enemy = GameObject.intersects(Enemy.class, this.boxCollider);

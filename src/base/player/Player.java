@@ -115,6 +115,7 @@ public class Player extends GameObject implements Physics {
     private void fire() {
         GameObject playerBullet = GameObject.recycle(PlayerBullet.class);
         playerBullet.position.set(this.position);
+        ((PlayerBullet) playerBullet).direction=this.direction;
         if (this.direction == 1) {
             playerBullet.velocity.set(0,-5);
         }
