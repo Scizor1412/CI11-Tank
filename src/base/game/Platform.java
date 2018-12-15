@@ -6,8 +6,6 @@ import base.physics.BoxCollider;
 import base.physics.Physics;
 import base.renderer.SingleImageRenderer;
 
-import javax.swing.*;
-
 public class Platform extends GameObject implements Physics {
     BoxCollider boxCollider;
     Vector2D masterAnchor;

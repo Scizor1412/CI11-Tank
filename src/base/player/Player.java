@@ -77,6 +77,9 @@ public class Player extends GameObject implements Physics {
                         }
                     }
                 }
+                if(this.position.y<0){
+                    this.position.substractThis(0, -Settings.WAY_SIZE / 2);
+                }
             } else if (KeyEventPress.isDownPress) {
                 this.position.addThis(0, Settings.WAY_SIZE / 2);
                 ArrayList<Platform> collidedPlatforms = new ArrayList<>();
@@ -90,6 +93,9 @@ public class Player extends GameObject implements Physics {
                             }
                         }
                     }
+                }
+                if(this.position.y>Settings.SCREEN_HEIGHT){
+                    this.position.substractThis(0, Settings.WAY_SIZE / 2);
                 }
             } else if (KeyEventPress.isLeftPress) {
                 this.position.addThis(-Settings.WAY_SIZE / 2, 0);
@@ -105,6 +111,9 @@ public class Player extends GameObject implements Physics {
                         }
                     }
                 }
+                if(this.position.x<0){
+                    this.position.substractThis(-Settings.WAY_SIZE / 2, 0);
+                }
             } else if (KeyEventPress.isRightPress) {
                 this.position.addThis(Settings.WAY_SIZE / 2, 0);
                 ArrayList<Platform> collidedPlatforms = new ArrayList<>();
@@ -118,6 +127,9 @@ public class Player extends GameObject implements Physics {
                             }
                         }
                     }
+                }
+                if(this.position.x>Settings.SCREEN_WIDTH){
+                    this.position.substractThis(Settings.WAY_SIZE / 2, 0);
                 }
             }
             moveCounter.reset();
