@@ -17,6 +17,7 @@ import java.util.ArrayList;
 public class Enemy extends GameObject implements Physics {
     BoxCollider boxCollider;
     FrameCounter immuneCounter;
+    public static int numberEnemy=20;
     public int hp;
     boolean immune;
     int direction;
@@ -25,9 +26,14 @@ public class Enemy extends GameObject implements Physics {
 
     public Enemy() {
         super();
+
         this.boxCollider = new BoxCollider(this.position, this.anchor, 15, 15);
         this.createRenderer();
 //        this.renderer = new BoxRenderer(this.boxCollider, Color.BLUE, true);
+
+
+        this.boxCollider = new BoxCollider(this.position, this.anchor, 32, 32);
+        this.createRenderer();
         this.hp = 3;
         this.immune = false;
         this.immuneCounter = new FrameCounter(20);
@@ -156,6 +162,7 @@ public class Enemy extends GameObject implements Physics {
         if (hp <= 0) {
             this.hp = 0;
             this.destroy();
+            this.numberEnemy --;
         } else {
             this.immune = true;
             this.immuneCounter.reset();
