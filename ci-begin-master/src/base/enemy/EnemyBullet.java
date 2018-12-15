@@ -14,7 +14,7 @@ public class EnemyBullet extends GameObject implements Physics {
 
     public EnemyBullet() {
         super();
-        this.boxCollider = new BoxCollider(this.position, 30, 30);
+        this.boxCollider = new BoxCollider(this.position, this.anchor,30, 30);
         this.renderer = new BoxRenderer(this.boxCollider, Color.LIGHT_GRAY, true);
 
     }

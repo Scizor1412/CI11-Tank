@@ -9,8 +9,11 @@ import base.renderer.BoxRenderer;
 import base.game.Settings;
 import base.physics.BoxCollider;
 import base.physics.Physics;
+import tklibs.SpriteUtils;
 
 import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.util.ArrayList;
 
 public class Player extends GameObject implements Physics {
     BoxCollider boxCollider;
@@ -20,11 +23,18 @@ public class Player extends GameObject implements Physics {
 
     public Player() {
         this.position.set(210, 310);
-        this.boxCollider = new BoxCollider(this.position, 16, 16);
-        this.renderer = new BoxRenderer(this.boxCollider, Color.CYAN, true);
+        this.boxCollider = new BoxCollider(this.position, this.anchor, 16, 16);
+        this.createRenderer();
         this.moveCounter = new FrameCounter(4);
         this.fireCounter = new FrameCounter(15);
         this.direction = 1;
+    }
+
+    private void createRenderer() {
+        ArrayList<BufferedImage> images = new ArrayList<>();
+        images.add(SpriteUtils.loadImage("assets/Image/player/1/tank_player1_left_c0_t1_s1.png"));
+        images.add(SpriteUtils.loadImage("assets/Image/player/1/tank_player1_left_c0_t2_s1.png"));
+        this.renderer = new PlayerAnimator(images, 5);
     }
 
     @Override

@@ -14,9 +14,9 @@ public class Wall extends GameObject implements Physics {
 
     public Wall(){
         super();
-        this.boxCollider = new BoxCollider(this.position, Settings.WAY_SIZE , Settings.WAY_SIZE);
+        this.boxCollider = new BoxCollider(this.position, this.anchor, Settings.WAY_SIZE, Settings.WAY_SIZE);
         this.renderer = new BoxRenderer(this.boxCollider, Color.GREEN, true);
-        this.position.set(Settings.WAY_SIZE*10, Settings.WAY_SIZE*0);
+        this.position.set(Settings.WAY_SIZE*10, Settings.WAY_SIZE*1);
         this.anchor.set(0,0);
         this.hp = 3;
     }
