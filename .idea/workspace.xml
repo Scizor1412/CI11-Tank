@@ -2,77 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="270e05ad-e69e-419c-a858-8eec2363a09a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/bullet/bullet_down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/bullet/bullet_left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/bullet/bullet_right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/bullet/bullet_up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/enemy/1/tank_armor_down_c1_t1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/enemy/1/tank_armor_down_c1_t2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/enemy/1/tank_armor_left_c1_t1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/enemy/1/tank_armor_left_c1_t2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/enemy/1/tank_armor_right_c1_t1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/enemy/1/tank_armor_right_c1_t2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/enemy/1/tank_armor_up_c1_t1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/enemy/1/tank_armor_up_c1_t2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/enemy/2/tank_armor_down_c2_t1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/enemy/2/tank_armor_down_c2_t2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/enemy/2/tank_armor_left_c2_t1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/enemy/2/tank_armor_left_c2_t2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/enemy/2/tank_armor_right_c2_t1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/enemy/2/tank_armor_right_c2_t2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/enemy/2/tank_armor_up_c2_t1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/enemy/2/tank_armor_up_c2_t2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/enemy/3/tank_basic_down_c0_t1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/enemy/3/tank_basic_down_c0_t2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/enemy/3/tank_basic_left_c0_t1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/enemy/3/tank_basic_left_c0_t2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/enemy/3/tank_basic_right_c0_t1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/enemy/3/tank_basic_right_c0_t2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/enemy/3/tank_basic_up_c0_t1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/enemy/3/tank_basic_up_c0_t2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/enemy/enemy counter/enemy_counter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/explosion/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/explosion/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/explosion/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/explosion/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/explosion/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/explosion/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/explosion/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/explosion/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/explosion/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/explosion/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/flag/deadflag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/flag/eagle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/flag/flag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/objects/bounes.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/objects/brick.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/objects/deepsea.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/objects/forest.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/objects/iron.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/objects/sea.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/objects/steel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/objects/void.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/player/1/tank_player1_down_c0_t1_s1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/player/1/tank_player1_down_c0_t2_s1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/player/1/tank_player1_left_c0_t1_s1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/player/1/tank_player1_left_c0_t2_s1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/player/1/tank_player1_right_c0_t1_s1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/player/1/tank_player1_right_c0_t2_s1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/player/1/tank_player1_up_c0_t1_s1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/player/1/tank_player1_up_c0_t2_s1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/Image/player/player life/life.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/sound/background music.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/sound/bullet_hit_1.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/sound/bullet_hit_2.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/sound/bullet_shot.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/sound/explosion_1.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/sound/explosion_2.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/sound/game_over.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/sound/pause.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/sound/powerup_appear.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/sound/powerup_pick.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/sound/stage_start.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci-begin-master/assets/sound/statistics_1.ogg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/Background.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/Background.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/Enemy/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/Enemy/Enemy.class" afterDir="false" />
@@ -103,129 +32,7 @@
       <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/Vector2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/Vector2D.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/game/GameCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/game/GameCanvas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/game/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/game/GameWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/background/0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/background/GameOver.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/background/menuScene.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/bullets/blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/bullets/cyan.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/bullets/green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/bullets/pink.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/bullets/red.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/bullets/white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/bullets/yellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/explosion-big/0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/explosion-big/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/explosion-big/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/explosion-big/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/explosion-big/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/explosion-big/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/explosion-big/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/explosion-big/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/explosion/0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/explosion/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/explosion/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/explosion/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/explosion/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/explosion/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/explosion/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/explosion/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/level0/black/0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/level0/black/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/level0/black/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/level0/black/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/level0/black/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/level0/black/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/level0/black/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/level0/black/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/level0/blue/0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/level0/blue/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/level0/blue/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/level0/blue/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/level0/pink/0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/level0/pink/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/level0/pink/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/enemies/level0/pink/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/hud/enemy-banner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/hud/numbers/0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/hud/numbers/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/hud/numbers/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/hud/numbers/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/hud/numbers/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/hud/numbers/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/hud/numbers/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/hud/numbers/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/hud/numbers/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/hud/numbers/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/hud/picture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/hud/player.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/hud/power.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/hud/ring.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/items/power-up-blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/items/power-up-red.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/menus/quit-color.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/menus/quit-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/menus/start-color.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/menus/start-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/player-bullets/a/0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/player-bullets/a/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/player-bullets/a/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/player-bullets/a/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/players/explosions/0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/players/explosions/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/players/explosions/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/players/explosions/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/players/explosions/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/players/explosions/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/players/explosions/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/players/explosions/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/players/left/0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/players/left/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/players/left/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/players/left/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/players/left/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/players/left/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/players/right/0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/players/right/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/players/right/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/players/right/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/players/right/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/players/right/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/players/straight/0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/players/straight/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/players/straight/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/players/straight/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/players/straight/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/players/straight/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/players/straight/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/scenes/background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/scenes/game-over-background.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/scenes/menu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/scenes/thanks-for-playing.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/scenes/victory-background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/scenes/victory.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/sphere-bullets/0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/sphere-bullets/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/sphere-bullets/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/sphere-bullets/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/sphere/0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/sphere/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/sphere/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/images/sphere/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/music/1.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/music/bgm/ending.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/music/bgm/game-over.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/music/bgm/title.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/music/sfx/enemy-explosion-big.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/music/sfx/enemy-explosion.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/music/sfx/item-collect.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/music/sfx/ok.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/music/sfx/option.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/music/sfx/player-dead.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/music/sfx/player-shoot.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/assets/music/sfx/powerup.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ci-begin-master/src/base/player/PlayerBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/src/base/player/PlayerBullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/player/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/player/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/player/PlayerBullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/player/PlayerBullet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -251,7 +58,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ci-begin-master/src/base/player/PlayerBullet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="307">
               <caret line="29" column="75" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -284,7 +91,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ci-begin-master/src/base/obstructor/Wall.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
+            <state relative-caret-position="204">
               <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -305,7 +112,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ci-begin-master/src/base/player/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7">
+            <state relative-caret-position="1275">
               <caret line="85" selection-start-line="85" selection-end-line="85" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -365,7 +172,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -438,6 +244,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -496,7 +303,7 @@
     <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29761904" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30182073" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -505,7 +312,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3297587" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3297587" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -579,9 +386,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ci-begin-master/assets/images/background/menuScene.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ci-begin-master/assets/images/background/menuScene.png" />
     <entry file="file://$PROJECT_DIR$/ci-begin-master/src/base/renderer/SingleImageRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -806,16 +611,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ci-begin-master/src/base/enemy/Enemy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="73" column="65" selection-start-line="73" selection-start-column="65" selection-end-line="73" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ci-begin-master/src/base/obstructor/Wall.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="204">
           <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -823,9 +621,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ci-begin-master/src/base/enemy/Enemy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="73" column="65" selection-start-line="73" selection-start-column="65" selection-end-line="73" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ci-begin-master/src/base/player/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
+        <state relative-caret-position="1275">
           <caret line="85" selection-start-line="85" selection-end-line="85" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -837,7 +642,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ci-begin-master/src/base/player/PlayerBullet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="307">
           <caret line="29" column="75" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
