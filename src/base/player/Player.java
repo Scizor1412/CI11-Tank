@@ -65,62 +65,44 @@ public class Player extends GameObject implements Physics {
     private void move() {
         if (moveCounter.run()) {
             if (KeyEventPress.isUpPress) {
-                this.position.addThis(0, -Settings.WAY_SIZE / 2);
-                ArrayList<Platform> collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
-                if (collidedPlatforms != null) {
-                    for (Platform platform : collidedPlatforms) {
-                        if (platform != null) {
-                            if (platform.platformType == 1 || platform.platformType == 2 || platform.platformType == 3) {
-                                this.position.substractThis(0, -Settings.WAY_SIZE / 2);
-                                break;
-                            }
-                        }
-                    }
-                }
+                float vy = -Settings.WAY_SIZE / 2;
+                float vx = 0;
+                this.position.addThis(vx, vy);
+                this.collidePlatform(vx, vy);
+
             } else if (KeyEventPress.isDownPress) {
-                this.position.addThis(0, Settings.WAY_SIZE / 2);
-                ArrayList<Platform> collidedPlatforms = new ArrayList<>();
-                collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
-                if (collidedPlatforms != null) {
-                    for (Platform platform : collidedPlatforms) {
-                        if (platform != null) {
-                            if (platform.platformType == 1 || platform.platformType == 2 || platform.platformType == 3) {
-                                this.position.substractThis(0, Settings.WAY_SIZE / 2);
-                                break;
-                            }
-                        }
-                    }
-                }
+                float vy = Settings.WAY_SIZE / 2;
+                float vx = 0;
+                this.position.addThis(vx, vy);
+                this.collidePlatform(vx, vy);
+
             } else if (KeyEventPress.isLeftPress) {
-                this.position.addThis(-Settings.WAY_SIZE / 2, 0);
-                ArrayList<Platform> collidedPlatforms = new ArrayList<>();
-                collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
-                if (collidedPlatforms != null) {
-                    for (Platform platform : collidedPlatforms) {
-                        if (platform != null) {
-                            if (platform.platformType == 1 || platform.platformType == 2 || platform.platformType == 3) {
-                                this.position.substractThis(-Settings.WAY_SIZE / 2, 0);
-                                break;
-                            }
-                        }
-                    }
-                }
+                float vx = -Settings.WAY_SIZE / 2;
+                float vy = 0;
+                this.position.addThis(vx, vy);
+                this.collidePlatform(vx, vy);
+
             } else if (KeyEventPress.isRightPress) {
-                this.position.addThis(Settings.WAY_SIZE / 2, 0);
-                ArrayList<Platform> collidedPlatforms = new ArrayList<>();
-                collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
-                if (collidedPlatforms != null) {
-                    for (Platform platform : collidedPlatforms) {
-                        if (platform != null) {
-                            if (platform.platformType == 1 || platform.platformType == 2 || platform.platformType == 3) {
-                                this.position.substractThis(Settings.WAY_SIZE / 2, 0);
-                                break;
-                            }
-                        }
+                float vx = Settings.WAY_SIZE / 2;
+                float vy = 0;
+                this.position.addThis(vx, vy);
+                this.collidePlatform(vx, vy);
+            }
+            moveCounter.reset();
+        }
+    }
+
+    private void collidePlatform(float vx, float vy) {
+        ArrayList<Platform> collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
+        if (collidedPlatforms != null) {
+            for (Platform platform : collidedPlatforms) {
+                if (platform != null) {
+                    if (platform.platformType == 1 || platform.platformType == 2 || platform.platformType == 3) {
+                        this.position.substractThis(vx, vy);
+                        break;
                     }
                 }
             }
-            moveCounter.reset();
         }
     }
 

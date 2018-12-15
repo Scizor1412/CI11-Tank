@@ -56,71 +56,46 @@ public class Enemy extends GameObject implements Physics {
     private void move() {
         if (this.moveCounter.run()) {
             if (this.direction == 1) {
-                this.position.addThis(0, -Settings.WAY_SIZE / 2);
-                ArrayList<Platform> collidedPlatforms = new ArrayList<>();
-                collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
-                if (collidedPlatforms != null) {
-                    for (Platform platform : collidedPlatforms) {
-                        if (platform != null) {
-                            if (platform.platformType == 1 || platform.platformType == 2 || platform.platformType == 3) {
-                                this.position.substractThis(0, -Settings.WAY_SIZE / 2);
-                                this.direction = (int) (Math.random() * 4 + 1);
-                                break;
-                            }
-                        }
-                    }
-
-                }
+                float vy = -Settings.WAY_SIZE / 2;
+                float vx = 0;
+                this.position.addThis(vx, vy);
+                this.collidePlatform(vx, vy);
             }
+
             if (this.direction == 2) {
-                this.position.addThis(0, Settings.WAY_SIZE / 2);
-                ArrayList<Platform> collidedPlatforms = new ArrayList<>();
-                collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
-                if (collidedPlatforms != null) {
-                    for (Platform platform : collidedPlatforms) {
-                        if (platform != null) {
-                            if (platform.platformType == 1 || platform.platformType == 2 || platform.platformType == 3) {
-                                this.position.substractThis(0, Settings.WAY_SIZE / 2);
-                                this.direction = (int) (Math.random() * 4 + 1);
-                                break;
-                            }
-                        }
-                    }
-                }
+                float vy = Settings.WAY_SIZE / 2;
+                float vx = 0;
+                this.position.addThis(vx, vy);
+                this.collidePlatform(vx, vy);
             }
             if (this.direction == 3) {
-                this.position.addThis(-Settings.WAY_SIZE / 2, 0);
-                ArrayList<Platform> collidedPlatforms = new ArrayList<>();
-                collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
-                if (collidedPlatforms != null) {
-                    for (Platform platform : collidedPlatforms) {
-                        if (platform != null) {
-                            if (platform.platformType == 1 || platform.platformType == 2 || platform.platformType == 3) {
-                                this.position.substractThis(-Settings.WAY_SIZE / 2, 0);
-                                this.direction = (int) (Math.random() * 4 + 1);
-                                break;
-                            }
-                        }
-                    }
-                }
+                float vx = -Settings.WAY_SIZE / 2;
+                float vy = 0;
+                this.position.addThis(vx, vy);
+                this.collidePlatform(vx, vy);
             }
             if (this.direction == 4) {
-                this.position.addThis(Settings.WAY_SIZE / 2, 0);
-                ArrayList<Platform> collidedPlatforms = new ArrayList<>();
-                collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
-                if (collidedPlatforms != null) {
-                    for (Platform platform : collidedPlatforms) {
-                        if (platform != null) {
-                            if (platform.platformType == 1 || platform.platformType == 2 || platform.platformType == 3) {
-                                this.position.substractThis(Settings.WAY_SIZE / 2, 0);
-                                this.direction = (int) (Math.random() * 4 + 1);
-                                break;
-                            }
-                        }
+                float vx = Settings.WAY_SIZE / 2;
+                float vy = 0;
+                this.position.addThis(vx, vy);
+                this.collidePlatform(vx, vy);
+            }
+            this.moveCounter.reset();
+        }
+    }
+
+    private void collidePlatform(float vx, float vy) {
+        ArrayList<Platform> collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
+        if (collidedPlatforms != null) {
+            for (Platform platform : collidedPlatforms) {
+                if (platform != null) {
+                    if (platform.platformType == 1 || platform.platformType == 2 || platform.platformType == 3) {
+                        this.position.substractThis(vx, vy);
+                        this.direction = (int) (Math.random() * 4 + 1);
+                        break;
                     }
                 }
             }
-            this.moveCounter.reset();
         }
     }
 
