@@ -20,7 +20,7 @@ public class Wall extends GameObject implements Physics {
         this.renderer = new BoxRenderer(this.boxCollider, Color.GREEN, true);
         this.position.set(Settings.WAY_SIZE*10, Settings.WAY_SIZE*1);
         this.anchor.set(0,0);
-        this.hp = 3;
+        this.hp = 2;
     }
 
     @Override
