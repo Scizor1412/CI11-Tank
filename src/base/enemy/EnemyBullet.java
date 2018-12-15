@@ -1,30 +1,27 @@
 package base.enemy;
 
 import base.GameObject;
-import base.renderer.BoxRenderer;
+import base.game.Platform;
 import base.game.Settings;
+import base.obstructor.Wall;
 import base.physics.BoxCollider;
 import base.physics.Physics;
-import tklibs.SpriteUtils;
+import base.player.Player;
+import base.renderer.BoxRenderer;
 
 import java.awt.*;
-import java.awt.image.BufferedImage;
+import java.util.ArrayList;
 
 public class EnemyBullet extends GameObject implements Physics {
     BoxCollider boxCollider;
     int direction;
+    int damage;
 
     public EnemyBullet() {
         super();
-        this.boxCollider = new BoxCollider(this.position, this.anchor,8, 8);
-        //this.renderer = new BoxRenderer(this.boxCollider, Color.LIGHT_GRAY, true);
-        this.createrenderer();
-
-    }
-
-    private void createrenderer() {
-        BufferedImage image = SpriteUtils.loadImage("assets/Image/bullet/bullet_left.png");
-        this.renderer=new EnemyBulletDirection(image);
+        this.boxCollider = new BoxCollider(this.position, this.anchor,30, 30);
+        this.renderer = new BoxRenderer(this.boxCollider, Color.LIGHT_GRAY, true);
+        this.damage = 1;
     }
 
     @Override
@@ -32,6 +29,38 @@ public class EnemyBullet extends GameObject implements Physics {
         super.run();
         this.move();
         this.destroyIfNeeded();
+        this.hitPlayer();
+        this.hitWall();
+    }
+
+    private void hitPlayer() {
+        ArrayList<Player> collidedPlayers = new ArrayList<>();
+        collidedPlayers = GameObject.intersects(Player.class, this.boxCollider);
+        if (collidedPlayers != null) {
+            for (Player player : collidedPlayers) {
+                    if (player.hp > 0) {
+                        player.hp -= 1;
+                        this.destroy();
+                    } else {
+                        player.destroy();
+                        this.destroy();
+                    }
+            }
+        }
+    }
+
+    private void hitWall() {
+        ArrayList<Platform> collidedPlatforms = new ArrayList<>();
+        collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
+        if (collidedPlatforms != null) {
+            for (Platform platform : collidedPlatforms) {
+                    if (platform.platformType == 3) {
+                        platform.takeDamage(damage);
+                        this.destroy();
+                    }
+            }
+        }
+
     }
 
     private void move() {
@@ -50,7 +79,10 @@ public class EnemyBullet extends GameObject implements Physics {
     }
 
     private void destroyIfNeeded() {
-        if (this.position.y < -20 || this.position.y > Settings.SCREEN_HEIGHT || this.position.x < -20 || this.position.x > Settings.SCREEN_WIDTH) {
+        if (this.position.y < -20
+                || this.position.y > Settings.SCREEN_HEIGHT
+                || this.position.x < -20
+                || this.position.x > Settings.SCREEN_WIDTH) {
             this.destroy();
         }
     }

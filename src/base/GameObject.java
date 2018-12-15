@@ -37,9 +37,10 @@ public class GameObject {
         gameObjects.clear(); //untested
     }
 
-    public static <E extends GameObject> E intersects(Class<E> clazz, BoxCollider boxCollider) {
+    public static <E extends GameObject> ArrayList<E> intersects(Class<E> clazz, BoxCollider boxCollider) {
         // gameObjects > result( result instance of E, result instance of Physics, result.getBoxCollider.intersects(boxCollider))
         int size = gameObjects.size();
+        ArrayList<E> gameObjectCollideds = new ArrayList<>();
         for (int i = 0; i < size; i++) {
             GameObject gameObject = gameObjects.get(i);
             if (gameObject.isActive
@@ -47,11 +48,11 @@ public class GameObject {
                     && gameObject instanceof Physics) {
                 Physics gameObjectPhysics = (Physics) gameObject;
                 if (gameObjectPhysics.getBoxCollider().intersects(boxCollider)) {
-                    return (E) gameObject;
+                    gameObjectCollideds.add((E) gameObject);
                 }
             }
         }
-        return null;
+        return gameObjectCollideds.size() == 0 ? null : gameObjectCollideds;
     }
 
     private static boolean isValidRecycle(GameObject gameObject, Class clazz) {

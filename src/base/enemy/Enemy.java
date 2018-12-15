@@ -2,12 +2,12 @@ package base.enemy;
 
 import base.FrameCounter;
 import base.GameObject;
-import base.obstructor.Wall;
-import base.player.PlayerAnimator;
-import base.renderer.BoxRenderer;
+import base.game.Platform;
 import base.game.Settings;
+import base.obstructor.Wall;
 import base.physics.BoxCollider;
 import base.physics.Physics;
+import base.renderer.BoxRenderer;
 import tklibs.SpriteUtils;
 
 import java.awt.*;
@@ -25,16 +25,18 @@ public class Enemy extends GameObject implements Physics {
 
     public Enemy() {
         super();
-        this.boxCollider = new BoxCollider(this.position, this.anchor, 32, 32);
-        this.createrenderer();
+        this.anchor.set(0,0);
+        this.boxCollider = new BoxCollider(this.position, this.anchor, 15, 15);
+        this.createRenderer();
+//        this.renderer = new BoxRenderer(this.boxCollider, Color.BLUE, true);
         this.hp = 3;
         this.immune = false;
-        this.immuneCounter = new FrameCounter(60);
+        this.immuneCounter = new FrameCounter(20);
         this.moveCounter = new FrameCounter(6);
         this.fireCounter = new FrameCounter(10);
     }
 
-    private void createrenderer() {
+    private void createRenderer() {
         ArrayList<BufferedImage> images = new ArrayList<>();
         images.add(SpriteUtils.loadImage("assets/Image/enemy/1/tank_armor_left_c1_t1.png"));
         images.add(SpriteUtils.loadImage("assets/Image/enemy/1/tank_armor_left_c1_t2.png"));
@@ -54,35 +56,68 @@ public class Enemy extends GameObject implements Physics {
     private void move() {
         if (this.moveCounter.run()) {
             if (this.direction == 1) {
-                this.position.addThis(0, -Settings.WAY_SIZE/2);
-                Wall wall = GameObject.intersects(Wall.class, this.boxCollider);
-                if (wall != null){
-                    this.position.substractThis(0, -Settings.WAY_SIZE/2);
-                    this.direction = (int) (Math.random()*4 + 1);
+                this.position.addThis(0, -Settings.WAY_SIZE / 2);
+                ArrayList<Platform> collidedPlatforms = new ArrayList<>();
+                collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
+                if (collidedPlatforms != null) {
+                    for (Platform platform : collidedPlatforms) {
+                        if (platform != null) {
+                            if (platform.platformType == 1 || platform.platformType == 2 || platform.platformType == 3) {
+                                this.position.substractThis(0, -Settings.WAY_SIZE / 2);
+                                this.direction = (int) (Math.random() * 4 + 1);
+                                break;
+                            }
+                        }
+                    }
+
                 }
             }
             if (this.direction == 2) {
-                this.position.addThis(0, Settings.WAY_SIZE/2);
-                Wall wall = GameObject.intersects(Wall.class, this.boxCollider);
-                if (wall != null){
-                    this.position.substractThis(0, Settings.WAY_SIZE/2);
-                    this.direction = (int) (Math.random()*4 + 1);
+                this.position.addThis(0, Settings.WAY_SIZE / 2);
+                ArrayList<Platform> collidedPlatforms = new ArrayList<>();
+                collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
+                if (collidedPlatforms != null) {
+                    for (Platform platform : collidedPlatforms) {
+                        if (platform != null) {
+                            if (platform.platformType == 1 || platform.platformType == 2 || platform.platformType == 3) {
+                                this.position.substractThis(0, Settings.WAY_SIZE / 2);
+                                this.direction = (int) (Math.random() * 4 + 1);
+                                break;
+                            }
+                        }
+                    }
                 }
             }
             if (this.direction == 3) {
-                this.position.addThis(-Settings.WAY_SIZE/2, 0);
-                Wall wall = GameObject.intersects(Wall.class, this.boxCollider);
-                if (wall != null){
-                    this.position.substractThis(-Settings.WAY_SIZE/2, 0);
-                    this.direction = (int) (Math.random()*4 + 1);
+                this.position.addThis(-Settings.WAY_SIZE / 2, 0);
+                ArrayList<Platform> collidedPlatforms = new ArrayList<>();
+                collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
+                if (collidedPlatforms != null) {
+                    for (Platform platform : collidedPlatforms) {
+                        if (platform != null) {
+                            if (platform.platformType == 1 || platform.platformType == 2 || platform.platformType == 3) {
+                                this.position.substractThis(-Settings.WAY_SIZE / 2, 0);
+                                this.direction = (int) (Math.random() * 4 + 1);
+                                break;
+                            }
+                        }
+                    }
                 }
             }
             if (this.direction == 4) {
-                this.position.addThis(Settings.WAY_SIZE/2, 0);
-                Wall wall = GameObject.intersects(Wall.class, this.boxCollider);
-                if (wall != null){
-                    this.position.substractThis(Settings.WAY_SIZE/2, 0);
-                    this.direction = (int) (Math.random()*4 + 1);
+                this.position.addThis(Settings.WAY_SIZE / 2, 0);
+                ArrayList<Platform> collidedPlatforms = new ArrayList<>();
+                collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
+                if (collidedPlatforms != null) {
+                    for (Platform platform : collidedPlatforms) {
+                        if (platform != null) {
+                            if (platform.platformType == 1 || platform.platformType == 2 || platform.platformType == 3) {
+                                this.position.substractThis(Settings.WAY_SIZE / 2, 0);
+                                this.direction = (int) (Math.random() * 4 + 1);
+                                break;
+                            }
+                        }
+                    }
                 }
             }
             this.moveCounter.reset();
@@ -127,12 +162,14 @@ public class Enemy extends GameObject implements Physics {
             this.immuneCounter.reset();
         }
     }
+
     @Override
     public void destroy() {
         super.destroy();
         EnemyExplosion explosion = GameObject.recycle(EnemyExplosion.class);
         explosion.position.set(this.position);
     }
+
     @Override
     public void reset() {
         super.reset();

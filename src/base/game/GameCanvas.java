@@ -1,31 +1,30 @@
 package base.game;
 
 
+import base.Background;
 import base.GameObject;
-import base.BackGround;
-import base.obstructor.SteelWall;
-import base.stage.Stage1;
+import base.enemy.EnemySummoner;
+import base.maps.Map;
+import base.obstructor.Wall;
+import base.player.Player;
+import base.scene.MenuScene;
+import base.scene.SceneManager;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class GameCanvas extends JPanel {
 
-    public GameCanvas(){
-        BackGround backGround = GameObject.recycle(BackGround.class);
+    public GameCanvas() {
         this.setPreferredSize(new Dimension(Settings.SCREEN_WIDTH, Settings.SCREEN_HEIGHT));
-        Stage1 stage1 = GameObject.recycle(Stage1.class);
-        SteelWall steelWall =GameObject.recycle(SteelWall.class);
 
-        //Player player = GameObject.recycle(Player.class);
-        //Wall wall = GameObject.recycle(Wall.class);
 
-//        SceneManager.signNewScene(new MenuScene());
+        SceneManager.signNewScene(new MenuScene());
     }
+
 
     @Override
     protected void paintComponent(Graphics g) {
-//        for (GameObject gameObject: GameObject.gameObjects) {
         g.setColor(Color.BLACK);
         g.fillRect(0, 0, Settings.SCREEN_WIDTH, Settings.SCREEN_HEIGHT);
         for (int i =0; i < GameObject.gameObjects.size(); i++) {
