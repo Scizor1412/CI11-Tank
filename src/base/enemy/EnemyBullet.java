@@ -1,6 +1,8 @@
 package base.enemy;
 
 import base.GameObject;
+import base.game.Platform;
+import base.player.Player;
 import base.renderer.BoxRenderer;
 import base.game.Settings;
 import base.physics.BoxCollider;
@@ -9,6 +11,7 @@ import tklibs.SpriteUtils;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.util.ArrayList;
 
 public class EnemyBullet extends GameObject implements Physics {
     BoxCollider boxCollider;
@@ -34,6 +37,35 @@ public class EnemyBullet extends GameObject implements Physics {
         super.run();
         this.move();
         this.destroyIfNeeded();
+        this.hitWall();
+        this.hitPlayer();
+    }
+
+    private void hitPlayer() {
+        ArrayList<Player> collidedPlayers = GameObject.intersects(Player.class, this.boxCollider);
+        if (collidedPlayers != null) {
+            for (Player player : collidedPlayers) {
+                if (player != null) {
+                    player.takeDamage(this.damage);
+                    this.destroy();
+                }
+            }
+        }
+    }
+
+    private void hitWall() {
+        ArrayList<Platform> collidedPlatforms = new ArrayList<>();
+        collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
+        if (collidedPlatforms != null) {
+            for (Platform platform : collidedPlatforms) {
+                if (platform != null) {
+                    if (platform.platformType == 2 || platform.platformType == 3) {
+                        platform.takeDamage(this.damage);
+                        this.destroy();
+                    }
+                }
+            }
+        }
     }
 
     private void move() {
