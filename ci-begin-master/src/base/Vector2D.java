@@ -95,6 +95,14 @@ public class Vector2D {
         return Math.atan(this.y/this.x);
     }
 
+    @Override
+    public String toString() {
+        return "Vector2D{" +
+                "x=" + x +
+                ", y=" + y +
+                '}';
+    }
+
     public static void main(String[] args) {
         Vector2D x1 = new Vector2D(3, 3);
         Vector2D result = x1.add(2, 5);

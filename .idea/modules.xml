@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ci-begin-master/ci-begin-master.iml" filepath="$PROJECT_DIR$/ci-begin-master/ci-begin-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/sokoban.iml" filepath="$PROJECT_DIR$/.idea/sokoban.iml" />
     </modules>
   </component>
 </project>

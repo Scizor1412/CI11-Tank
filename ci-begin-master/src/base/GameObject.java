@@ -12,7 +12,7 @@ public class GameObject {
     public static ArrayList<GameObject> gameObjects = new ArrayList<>();
 
     //createGameObject generic
-    public static <E extends GameObject> E create(Class<E> clazz){
+    public static <E extends GameObject> E create(Class<E> clazz) {
         try {
             E gameObject = clazz.newInstance();// = new E();
             gameObjects.add(gameObject);
@@ -26,7 +26,7 @@ public class GameObject {
         for (GameObject gameObject : gameObjects) {
             if (isValidRecycle(gameObject, clazz)) {
                 gameObject.reset();
-                return (E)gameObject;
+                return (E) gameObject;
             }
         }
         E newGameObject = create(clazz);
@@ -40,23 +40,24 @@ public class GameObject {
     public static <E extends GameObject> E intersects(Class<E> clazz, BoxCollider boxCollider) {
         // gameObjects > result( result instance of E, result instance of Physics, result.getBoxCollider.intersects(boxCollider))
         int size = gameObjects.size();
-        for (int i=0; i<size; i++ ) {
+        for (int i = 0; i < size; i++) {
             GameObject gameObject = gameObjects.get(i);
-            if (gameObject.isActive &&
-                 gameObject.getClass().isAssignableFrom(clazz)
-                 && gameObject instanceof Physics) {
+            if (gameObject.isActive
+                    && gameObject.getClass().isAssignableFrom(clazz)
+                    && gameObject instanceof Physics) {
                 Physics gameObjectPhysics = (Physics) gameObject;
                 if (gameObjectPhysics.getBoxCollider().intersects(boxCollider)) {
-                    return (E)gameObject;
+                    return (E) gameObject;
                 }
             }
         }
         return null;
     }
 
-    private static boolean isValidRecycle (GameObject gameObject, Class clazz) {
+    private static boolean isValidRecycle(GameObject gameObject, Class clazz) {
         return !gameObject.isActive && gameObject.getClass().isAssignableFrom(clazz);
     }
+
     // thuoc tinh
     public Vector2D position;
     public Renderer renderer;
@@ -87,7 +88,7 @@ public class GameObject {
 
     //hien thi
     public void render(Graphics g) {
-        if(this.renderer != null){
+        if (this.renderer != null) {
             this.renderer.render(g, this);
         }
     }

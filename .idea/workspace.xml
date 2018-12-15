@@ -2,37 +2,125 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="270e05ad-e69e-419c-a858-8eec2363a09a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/Background.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/Background.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/Enemy/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/Enemy/Enemy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/Enemy/EnemyBullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/Enemy/EnemyBullet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/FrameCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/FrameCounter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/GameObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/GameObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/KeyEventPress.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/KeyEventPress.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/Player/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/Player/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/Player/PlayerBullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/Player/PlayerBullet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/Player/PlayerBulletType1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/Player/PlayerBulletType1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/Renderer/AnimationRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/Renderer/AnimationRenderer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/Renderer/SingleImageRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/Renderer/SingleImageRenderer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/Vector2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/Vector2D.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/game/GameCanvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/game/GameCanvas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/game/GameWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/game/GameWindow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/game/GameWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/out/production/ci-begin/base/game/GameWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/Background.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/Enemy/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/Enemy/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/Enemy/EnemyBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/Enemy/EnemyBullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/FrameCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/FrameCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/KeyEventPress.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/KeyEventPress.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/Player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/Player/PlayerBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/Player/PlayerBullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/Player/PlayerBulletType1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/Player/PlayerBulletType1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/Renderer/AnimationRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/Renderer/AnimationRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/Renderer/SingleImageRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/Renderer/SingleImageRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/Vector2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/Vector2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/game/GameCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/game/GameCanvas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/game/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ci-begin-master/ci-begin-master/src/base/game/GameWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/Vector2D.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/enemy/Enemy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/enemy/EnemyBullet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/enemy/EnemySummoner$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/enemy/EnemySummoner.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/game/GameWindow.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/obstructor/Wall.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/physics/BoxCollider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/physics/Physics.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/player/Player.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/player/PlayerAnimator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/player/PlayerBullet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ci-begin-master/src/base/player/PlayerAnimator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/Program.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Action/Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Action/ActionParallel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Action/ActionRepeat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Action/ActionSequence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Action/ActionWait.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Background.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/CoverGameOverScene.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/CoverMenuScene.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Enemy/Enemy$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Enemy/Enemy$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Enemy/Enemy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Enemy/EnemyBullet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Enemy/EnemyExplosion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Enemy/EnemySummoner$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Enemy/EnemySummoner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/FrameCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/FrameCounter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/GameObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/KeyEventPress.class" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/KeyEventPress.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Player/ActionFire.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Player/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Player/PlayerBullet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Player/PlayerBulletType1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Player/PlayerBulletType2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Player/PlayerExplosion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Renderer/AnimationRenderer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Renderer/BoxRenderer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Renderer/Renderer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Renderer/SingleImageRenderer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Scene/GameOverScene.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Scene/MenuScene.class" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/Scene/MenuScene.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Scene/Scene.class" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/Scene/Scene.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Scene/SceneManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/Scene/SceneManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Scene/SceneStage1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/Vector2D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/game/GameCanvas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/game/GameWindow$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/game/GameWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/game/Settings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/physics/BoxCollider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/base/physics/Physics.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/tklibs/AudioUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/tklibs/AudioUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/tklibs/Mathx.class" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/tklibs/Mathx.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin/tklibs/SpriteUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/tklibs/SpriteUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/src/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/src/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/src/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/src/base/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/src/base/GameObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/src/base/Vector2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/src/base/Vector2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/src/base/enemy/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/src/base/enemy/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/src/base/enemy/EnemyBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/src/base/enemy/EnemyBullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/src/base/enemy/EnemySummoner.java" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/src/base/enemy/EnemySummoner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/src/base/obstructor/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/src/base/obstructor/Wall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/src/base/physics/BoxCollider.java" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/src/base/physics/BoxCollider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/src/base/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/src/base/player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci-begin-master/src/base/player/PlayerBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/src/base/player/PlayerBullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/META-INF/ci-begin-master.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/META-INF/ci-begin-master.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/Program.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/Action/Action.class" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/action/Action.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/Action/ActionParallel.class" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/action/ActionParallel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/Action/ActionRepeat.class" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/action/ActionRepeat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/Action/ActionSequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/action/ActionSequence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/Action/ActionWait.class" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/action/ActionWait.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/BackGround.class" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/BackGround.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/CoverGameOverScene.class" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/CoverGameOverScene.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/CoverMenuScene.class" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/CoverMenuScene.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/FrameCounter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/GameObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/GameObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/KeyEventPress.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/Obstructor/Wall.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/Renderer/AnimationRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/renderer/AnimationRenderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/Renderer/BoxRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/renderer/BoxRenderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/Renderer/Renderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/renderer/Renderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/Renderer/SingleImageRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/renderer/SingleImageRenderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/Scene/GameOverScene.class" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/Scene/GameOverScene.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/Scene/MenuScene.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/Scene/Scene.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/Scene/SceneManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/Vector2D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/enemy/Enemy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/enemy/EnemyBullet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/enemy/EnemySummoner$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/enemy/EnemySummoner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/game/GameCanvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/game/GameCanvas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/game/GameWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/game/GameWindow$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/game/GameWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/game/Settings.class" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master/out/production/ci-begin-master/base/game/Settings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/physics/BoxCollider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/physics/Physics.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/player/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/player/PlayerBullet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/tklibs/AudioUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/tklibs/Mathx.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/tklibs/SpriteUtils.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,11 +143,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ci-begin-master/src/base/player/PlayerBullet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="29" column="75" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="75" />
+            <state relative-caret-position="238">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,11 +155,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ci-begin-master/src/Program.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ci-begin-master/src/base/GameObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="71" column="38" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="38" />
+            <state relative-caret-position="1139">
+              <caret line="72" column="38" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,8 +179,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ci-begin-master/src/base/physics/BoxCollider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="102">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -113,7 +210,7 @@
         <entry file="file://$PROJECT_DIR$/ci-begin-master/src/base/player/Player.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1275">
-              <caret line="85" selection-start-line="85" selection-end-line="85" />
+              <caret line="95" selection-start-line="95" selection-end-line="95" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3324#3325#0" expanded="true" />
@@ -172,79 +269,30 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="sokoban" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sokoban" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sokoban" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sokoban" type="462c0819:PsiDirectoryNode" />
               <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sokoban" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sokoban" type="462c0819:PsiDirectoryNode" />
               <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sokoban" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sokoban" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="action" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sokoban" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="enemy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sokoban" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sokoban" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="obstructor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sokoban" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="physics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sokoban" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="player" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sokoban" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ci-begin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="renderer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -264,18 +312,13 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Program" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Program" />
       <module name="ci-begin-master" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Program" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -303,7 +346,7 @@
     <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30182073" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3060224" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -319,7 +362,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297587" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3297587" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -542,13 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ci-begin-master/src/Program.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-493">
-          <caret line="14" column="91" selection-start-line="14" selection-start-column="91" selection-end-line="14" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ci-begin-master/src/base/Vector2D.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-758">
@@ -596,8 +632,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ci-begin-master/src/base/GameObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="71" column="38" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="38" />
+        <state relative-caret-position="1139">
+          <caret line="72" column="38" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -606,8 +642,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ci-begin-master/src/base/physics/BoxCollider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -631,7 +667,7 @@
     <entry file="file://$PROJECT_DIR$/ci-begin-master/src/base/player/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3324#3325#0" expanded="true" />
@@ -642,11 +678,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ci-begin-master/src/base/player/PlayerBullet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="29" column="75" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="75" />
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ci-begin-master/src/Program.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -655,6 +698,7 @@
     <states>
       <state key="ProjectJDKs.UI">
         <settings>
+          <last-edited>11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

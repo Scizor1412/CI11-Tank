@@ -15,7 +15,7 @@ public class EnemySummoner extends GameObject implements Physics {
     Action actionSummon;
 
     public EnemySummoner() {
-        this.boxCollider = new BoxCollider(this.position, 20, 40);
+        this.boxCollider = new BoxCollider(this.position, this.anchor,20, 40);
         this.position.set(200, 300);
         this.renderer = new BoxRenderer(this.boxCollider, Color.WHITE, true);
         this.actionSummon = this.Summon();
