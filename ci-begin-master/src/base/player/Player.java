@@ -34,8 +34,8 @@ public class Player extends GameObject implements Physics {
 
     private void createRenderer() {
         ArrayList<BufferedImage> images = new ArrayList<>();
-        images.add(SpriteUtils.loadImage("F:\\Project-CI\\CI11-Tank\\ci-begin-master\\assets\\Image\\player\\1\\tank_player1_left_c0_t1_s1.png"));
-        images.add(SpriteUtils.loadImage("F:\\Project-CI\\CI11-Tank\\ci-begin-master\\assets\\Image\\player\\1\\tank_player1_left_c0_t1_s1.png"));
+        images.add(SpriteUtils.loadImage("assets/Image/player/1/tank_player1_left_c0_t1_s1.png"));
+        images.add(SpriteUtils.loadImage("assets/Image/player/1/tank_player1_left_c0_t1_s1.png"));
 
         this.renderer = new PlayerAnimator(images, 5);
     }
@@ -44,66 +44,86 @@ public class Player extends GameObject implements Physics {
     public void run() {
         this.turn();
         this.move();
-        if(this.fireCounter.run() && KeyEventPress.isFirePress) {
+        if (this.fireCounter.run() && KeyEventPress.isFirePress) {
             this.fire();
         }
         super.run();
     }
 
     private void turn() {
-        if(KeyEventPress.isUpPress) { this.direction = 1; }
-
-        else if(KeyEventPress.isDownPress) { this.direction = 2; }
-
-        else if(KeyEventPress.isLeftPress) { this.direction = 3; }
-
-        else if(KeyEventPress.isRightPress) { this.direction = 4; }
+        if (KeyEventPress.isUpPress) {
+            this.direction = 1;
+        } else if (KeyEventPress.isDownPress) {
+            this.direction = 2;
+        } else if (KeyEventPress.isLeftPress) {
+            this.direction = 3;
+        } else if (KeyEventPress.isRightPress) {
+            this.direction = 4;
+        }
     }
 
     private void move() {
         if (moveCounter.run()) {
-            if(KeyEventPress.isUpPress) {
-                this.position.addThis(0, -Settings.WAY_SIZE/2);
-                Platform platform = GameObject.intersects(Platform.class, this.boxCollider);
-                if (platform != null){
-                    if (platform.platformType != 4) {
-                        this.position.substractThis(0, -Settings.WAY_SIZE/2);
+            if (KeyEventPress.isUpPress) {
+                this.position.addThis(0, -Settings.WAY_SIZE / 2);
+                ArrayList<Platform> collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
+                if (collidedPlatforms != null) {
+                    for (Platform platform : collidedPlatforms) {
+                        if (platform != null) {
+                            if (platform.platformType == 1 || platform.platformType == 2 || platform.platformType == 3) {
+                                this.position.substractThis(0, -Settings.WAY_SIZE / 2);
+                                break;
+                            }
+                        }
                     }
                 }
-            }
-
-            else if(KeyEventPress.isDownPress) {
-                this.position.addThis(0, Settings.WAY_SIZE/2);
-                Platform platform = GameObject.intersects(Platform.class, this.boxCollider);
-                if (platform != null){
-                    if (platform.platformType != 4) {
-                        this.position.substractThis(0, Settings.WAY_SIZE/2);
+            } else if (KeyEventPress.isDownPress) {
+                this.position.addThis(0, Settings.WAY_SIZE / 2);
+                ArrayList<Platform> collidedPlatforms = new ArrayList<>();
+                collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
+                if (collidedPlatforms != null) {
+                    for (Platform platform : collidedPlatforms) {
+                        if (platform != null) {
+                            if (platform.platformType == 1 || platform.platformType == 2 || platform.platformType == 3) {
+                                this.position.substractThis(0, Settings.WAY_SIZE / 2);
+                                break;
+                            }
+                        }
                     }
                 }
-            }
-
-            else if(KeyEventPress.isLeftPress) {
-                this.position.addThis(-Settings.WAY_SIZE/2, 0);
-                Platform platform = GameObject.intersects(Platform.class, this.boxCollider);
-                if (platform != null){
-                    if (platform.platformType != 4) {
-                        this.position.substractThis(-Settings.WAY_SIZE/2, 0);
+            } else if (KeyEventPress.isLeftPress) {
+                this.position.addThis(-Settings.WAY_SIZE / 2, 0);
+                ArrayList<Platform> collidedPlatforms = new ArrayList<>();
+                collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
+                if (collidedPlatforms != null) {
+                    for (Platform platform : collidedPlatforms) {
+                        if (platform != null) {
+                            if (platform.platformType == 1 || platform.platformType == 2 || platform.platformType == 3) {
+                                this.position.substractThis(-Settings.WAY_SIZE / 2, 0);
+                                break;
+                            }
+                        }
                     }
                 }
-            }
-
-            else if(KeyEventPress.isRightPress) {
-                this.position.addThis(Settings.WAY_SIZE/2, 0);
-                Platform platform = GameObject.intersects(Platform.class, this.boxCollider);
-                if (platform != null){
-                    if (platform.platformType != 4) {
-                        this.position.substractThis(Settings.WAY_SIZE/2, 0);
+            } else if (KeyEventPress.isRightPress) {
+                this.position.addThis(Settings.WAY_SIZE / 2, 0);
+                ArrayList<Platform> collidedPlatforms = new ArrayList<>();
+                collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
+                if (collidedPlatforms != null) {
+                    for (Platform platform : collidedPlatforms) {
+                        if (platform != null) {
+                            if (platform.platformType == 1 || platform.platformType == 2 || platform.platformType == 3) {
+                                this.position.substractThis(Settings.WAY_SIZE / 2, 0);
+                                break;
+                            }
+                        }
                     }
                 }
             }
             moveCounter.reset();
         }
     }
+
 
     private void fire() {
         GameObject playerBullet = GameObject.recycle(PlayerBullet.class);

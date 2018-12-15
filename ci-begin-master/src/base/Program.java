@@ -1,3 +1,5 @@
+package base;
+
 import base.game.GameCanvas;
 import base.game.GameWindow;
 import base.game.Settings;

@@ -10,15 +10,18 @@ import base.player.Player;
 import base.renderer.BoxRenderer;
 
 import java.awt.*;
+import java.util.ArrayList;
 
 public class EnemyBullet extends GameObject implements Physics {
     BoxCollider boxCollider;
     int direction;
+    int damage;
 
     public EnemyBullet() {
         super();
         this.boxCollider = new BoxCollider(this.position, this.anchor,30, 30);
         this.renderer = new BoxRenderer(this.boxCollider, Color.LIGHT_GRAY, true);
+        this.damage = 1;
     }
 
     @Override
@@ -31,24 +34,37 @@ public class EnemyBullet extends GameObject implements Physics {
     }
 
     private void hitPlayer() {
-        Player player = GameObject.intersects(Player.class, this.boxCollider);
-        if (player != null) {
-            if (player.hp > 0){
-                player.hp -= 1;
-                this.destroy();
-            }
-            else {
-                player.destroy();
-                this.destroy();
+        ArrayList<Player> collidedPlayers = new ArrayList<>();
+        collidedPlayers = GameObject.intersects(Player.class, this.boxCollider);
+        if (collidedPlayers != null) {
+            for (Player player : collidedPlayers) {
+                if (player != null) {
+                    if (player.hp > 0) {
+                        player.hp -= 1;
+                        this.destroy();
+                    } else {
+                        player.destroy();
+                        this.destroy();
+                    }
+                }
             }
         }
     }
 
     private void hitWall() {
-        Platform platform = GameObject.intersects(Platform.class, this.boxCollider);
-        if (platform != null) {
-            this.destroy();
+        ArrayList<Platform> collidedPlatforms = new ArrayList<>();
+        collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
+        if (collidedPlatforms != null) {
+            for (Platform platform : collidedPlatforms) {
+                if (platform != null) {
+                    this.destroy();
+                    if (platform.platformType == 3) {
+                        platform.takeDamage(damage);
+                    }
+                }
+            }
         }
+
     }
 
     private void move() {

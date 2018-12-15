@@ -3,6 +3,7 @@ package base.scene;
 import base.Background;
 import base.GameObject;
 import base.enemy.EnemySummoner;
+import base.maps.Map;
 import base.obstructor.Wall;
 import base.player.Player;
 
@@ -17,8 +18,12 @@ public class SceneStage1 extends Scene {
     public void init() {
         this.background = GameObject.recycle(Background.class); //khởi tạo
         this.player = GameObject.recycle(Player.class); //new Player
-        this.enemySummoner = GameObject.recycle(EnemySummoner.class);
-        this.wall = GameObject.recycle(Wall.class);
+        EnemySummoner enemySummoner = GameObject.recycle(EnemySummoner.class);
+        enemySummoner.position.set(-20, 0);
+        EnemySummoner enemySummoner1 = GameObject.recycle(EnemySummoner.class);
+        enemySummoner.position.set(620, 0);
+        Map map = Map.load("assets/Image/map/tank..json");
+        map.generate();
     }
 
     @Override

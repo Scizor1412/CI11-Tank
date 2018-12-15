@@ -16,7 +16,7 @@ public class SpriteUtils {
         try {
             return ImageIO.read(new File(url));
         } catch (IOException e) {
-            e.printStackTrace();
+//            e.printStackTrace();
         }
         return null;
     }

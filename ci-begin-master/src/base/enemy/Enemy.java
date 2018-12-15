@@ -56,42 +56,63 @@ public class Enemy extends GameObject implements Physics {
     private void move() {
         if (this.moveCounter.run()) {
             if (this.direction == 1) {
-                this.position.addThis(0, -Settings.WAY_SIZE/2);
-                Platform platform = GameObject.intersects(Platform.class, this.boxCollider);
-                if (platform != null){
-                    if (platform.platformType != 4) {
-                        this.position.substractThis(0, -Settings.WAY_SIZE/2);
-                        this.direction = (int) (Math.random()*4 + 1);
+                this.position.addThis(0, -Settings.WAY_SIZE / 2);
+                ArrayList<Platform> collidedPlatforms = new ArrayList<>();
+                collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
+                if (collidedPlatforms != null) {
+                    for (Platform platform : collidedPlatforms) {
+                        if (platform != null) {
+                            if (platform.platformType != 4) {
+                                this.position.substractThis(0, -Settings.WAY_SIZE / 2);
+                                this.direction = (int) (Math.random() * 4 + 1);
+                            }
+                        }
                     }
+
                 }
             }
             if (this.direction == 2) {
-                this.position.addThis(0, Settings.WAY_SIZE/2);
-                Platform platform = GameObject.intersects(Platform.class, this.boxCollider);
-                if (platform != null){
-                    if (platform.platformType != 4) {
-                        this.position.substractThis(0, Settings.WAY_SIZE/2);
-                        this.direction = (int) (Math.random()*4 + 1);
+                this.position.addThis(0, Settings.WAY_SIZE / 2);
+                ArrayList<Platform> collidedPlatforms = new ArrayList<>();
+                collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
+                if (collidedPlatforms != null) {
+                    for (Platform platform : collidedPlatforms) {
+                        if (platform != null) {
+                            if (platform.platformType != 4) {
+                                this.position.substractThis(0, Settings.WAY_SIZE / 2);
+                                this.direction = (int) (Math.random() * 4 + 1);
+                            }
+                        }
                     }
                 }
             }
             if (this.direction == 3) {
-                this.position.addThis(-Settings.WAY_SIZE/2, 0);
-                Platform platform = GameObject.intersects(Platform.class, this.boxCollider);
-                if (platform != null){
-                    if (platform.platformType != 4) {
-                        this.position.substractThis(-Settings.WAY_SIZE/2, 0);
-                        this.direction = (int) (Math.random()*4 + 1);
+                this.position.addThis(-Settings.WAY_SIZE / 2, 0);
+                ArrayList<Platform> collidedPlatforms = new ArrayList<>();
+                collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
+                if (collidedPlatforms != null) {
+                    for (Platform platform : collidedPlatforms) {
+                        if (platform != null) {
+                            if (platform.platformType != 4) {
+                                this.position.substractThis(-Settings.WAY_SIZE / 2, 0);
+                                this.direction = (int) (Math.random() * 4 + 1);
+                            }
+                        }
                     }
                 }
             }
             if (this.direction == 4) {
-                this.position.addThis(Settings.WAY_SIZE/2, 0);
-                Platform platform = GameObject.intersects(Platform.class, this.boxCollider);
-                if (platform != null){
-                    if (platform.platformType != 4) {
-                        this.position.substractThis(Settings.WAY_SIZE/2, 0);
-                        this.direction = (int) (Math.random()*4 + 1);
+                this.position.addThis(Settings.WAY_SIZE / 2, 0);
+                ArrayList<Platform> collidedPlatforms = new ArrayList<>();
+                collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
+                if (collidedPlatforms != null) {
+                    for (Platform platform : collidedPlatforms) {
+                        if (platform != null) {
+                            if (platform.platformType != 4) {
+                                this.position.substractThis(Settings.WAY_SIZE / 2, 0);
+                                this.direction = (int) (Math.random() * 4 + 1);
+                            }
+                        }
                     }
                 }
             }
