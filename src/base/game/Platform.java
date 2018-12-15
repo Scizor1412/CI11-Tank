@@ -8,7 +8,6 @@ import base.renderer.SingleImageRenderer;
 
 public class Platform extends GameObject implements Physics {
     BoxCollider boxCollider;
-    Vector2D masterAnchor;
     public int platformType;
     int hp;
 
