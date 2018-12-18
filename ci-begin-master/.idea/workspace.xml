@@ -1,293 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2266b40f-40fa-4f15-a675-cc11797b6ca4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Image/Sprite-0001.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Image/background/gamePause.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Image/enemy/enemy counter/NumberEnemy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Image/explosion/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Image/explosion/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Image/explosion/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Image/explosion/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Image/explosion/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Image/explosion/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Image/explosion/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Image/explosion/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Image/explosion/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Image/explosion/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sound/background_music.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sound/bullet_hit_1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sound/bullet_hit_2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sound/bullet_shot.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sound/explosion_1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sound/explosion_2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sound/game_over.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sound/pause.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sound/powerup_appear.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sound/powerup_pick.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sound/stage_start.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sound/statistics_1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/gson-2.8.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ci-begin-master/META-INF/ci-begin-master.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/CoverGameOverScene.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/CoverGamePauseScene.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/CoverMenuScene.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/CoverPlayScene.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/GameObject.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/KeyEventPress.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/Vector2D.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/enemy/Enemy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/enemy/EnemyBullet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/enemy/EnemySummoner$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/game/GameCanvas.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/game/GameWindow$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/game/GameWindow.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/game/Platform.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/game/Settings.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/maps/Layer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/maps/Map.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/physics/Physics.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/player/Player.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/player/PlayerBullet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/scene/SceneStage1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/base/CoverGamePauseScene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/base/CoverPlayScene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/base/menu/MenuLife.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/base/menu/MenuWhite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/base/menu/MenuWhite2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/base/renderer/MenuLifeRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/base/renderer/MenuScoreRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/com_google_code_gson_gson_2_8_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/com_google_code_gson_gson_2_8_5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/background/gameOver.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/background/gameOver.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/background/gameStart.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/background/gameStart.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/bullet/bullet_down.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/bullet/bullet_down.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/bullet/bullet_left.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/bullet/bullet_left.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/bullet/bullet_right.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/bullet/bullet_right.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/bullet/bullet_up.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/bullet/bullet_up.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/enemy/1/tank_armor_down_c1_t1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/enemy/1/tank_armor_down_c1_t1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/enemy/1/tank_armor_down_c1_t2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/enemy/1/tank_armor_down_c1_t2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/enemy/1/tank_armor_left_c1_t1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/enemy/1/tank_armor_left_c1_t1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/enemy/1/tank_armor_left_c1_t2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/enemy/1/tank_armor_left_c1_t2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/enemy/1/tank_armor_right_c1_t1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/enemy/1/tank_armor_right_c1_t1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/enemy/1/tank_armor_right_c1_t2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/enemy/1/tank_armor_right_c1_t2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/enemy/1/tank_armor_up_c1_t1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/enemy/1/tank_armor_up_c1_t1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/enemy/1/tank_armor_up_c1_t2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/enemy/1/tank_armor_up_c1_t2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/enemy/2/tank_armor_down_c2_t1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/enemy/2/tank_armor_down_c2_t1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/enemy/2/tank_armor_down_c2_t2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/enemy/2/tank_armor_down_c2_t2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/enemy/2/tank_armor_left_c2_t1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/enemy/2/tank_armor_left_c2_t1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/enemy/2/tank_armor_left_c2_t2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/enemy/2/tank_armor_left_c2_t2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/enemy/2/tank_armor_right_c2_t1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/enemy/2/tank_armor_right_c2_t1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/enemy/2/tank_armor_right_c2_t2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/enemy/2/tank_armor_right_c2_t2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/enemy/2/tank_armor_up_c2_t1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/enemy/2/tank_armor_up_c2_t1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/enemy/2/tank_armor_up_c2_t2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/enemy/2/tank_armor_up_c2_t2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/enemy/3/tank_basic_down_c0_t1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/enemy/3/tank_basic_down_c0_t1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/enemy/3/tank_basic_down_c0_t2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/enemy/3/tank_basic_down_c0_t2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/enemy/3/tank_basic_left_c0_t1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/enemy/3/tank_basic_left_c0_t1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/enemy/3/tank_basic_left_c0_t2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/enemy/3/tank_basic_left_c0_t2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/enemy/3/tank_basic_right_c0_t1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/enemy/3/tank_basic_right_c0_t1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/enemy/3/tank_basic_right_c0_t2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/enemy/3/tank_basic_right_c0_t2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/enemy/3/tank_basic_up_c0_t1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/enemy/3/tank_basic_up_c0_t1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/enemy/3/tank_basic_up_c0_t2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/enemy/3/tank_basic_up_c0_t2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/enemy/enemy counter/enemy_counter.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/enemy/enemy counter/enemy_counter.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/explosion/0.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/explosion/0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/explosion/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/explosion/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/explosion/10.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/explosion/10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/explosion/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/explosion/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/explosion/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/explosion/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/explosion/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/explosion/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/explosion/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/explosion/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/explosion/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/explosion/6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/explosion/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/explosion/7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/explosion/9.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/explosion/9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/flag/deadflag.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/flag/deadflag.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/flag/eagle.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/flag/eagle.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/flag/flag.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/flag/flag.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/map/brick.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/map/brick.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/map/ci-begin-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/map/ci-begin-master.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/map/ci-begin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/map/ci-begin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/map/forest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/map/forest.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/map/sea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/map/sea.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/map/steel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/map/steel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/map/tank..json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/map/tank..json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/map/tank.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/map/tank.tmx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/map/tank2.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/map/tank2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/objects/bounes.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/objects/bounes.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/objects/brick.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/objects/brick.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/objects/brick_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/objects/brick_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/objects/brick_1.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/objects/brick_1.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/objects/brick_down.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/objects/brick_down.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/objects/brick_left.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/objects/brick_left.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/objects/brick_right.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/objects/brick_right.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/objects/brick_up.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/objects/brick_up.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/objects/deepsea.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/objects/deepsea.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/objects/forest.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/objects/forest.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/objects/forest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/objects/forest.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/objects/iron.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/objects/iron.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/objects/sea.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/objects/sea.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/objects/sea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/objects/sea.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/objects/steel.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/objects/steel.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/objects/steel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/objects/steel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/objects/void.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/objects/void.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/player/1/tank_player1_down_c0_t1_s1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/player/1/tank_player1_down_c0_t1_s1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/player/1/tank_player1_down_c0_t2_s1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/player/1/tank_player1_down_c0_t2_s1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/player/1/tank_player1_left_c0_t1_s1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/player/1/tank_player1_left_c0_t1_s1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/player/1/tank_player1_left_c0_t2_s1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/player/1/tank_player1_left_c0_t2_s1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/player/1/tank_player1_right_c0_t1_s1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/player/1/tank_player1_right_c0_t1_s1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/player/1/tank_player1_right_c0_t2_s1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/player/1/tank_player1_right_c0_t2_s1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/player/1/tank_player1_up_c0_t1_s1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/player/1/tank_player1_up_c0_t1_s1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/player/1/tank_player1_up_c0_t2_s1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/player/1/tank_player1_up_c0_t2_s1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/Image/player/player life/life.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Image/player/player life/life.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/sound/background music.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sound/background music.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/sound/bullet_hit_1.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sound/bullet_hit_1.ogg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/sound/bullet_hit_2.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sound/bullet_hit_2.ogg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/sound/bullet_shot.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sound/bullet_shot.ogg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/sound/explosion_1.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sound/explosion_1.ogg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/sound/explosion_2.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sound/explosion_2.ogg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/sound/game_over.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sound/game_over.ogg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/sound/pause.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sound/pause.ogg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/sound/powerup_appear.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sound/powerup_appear.ogg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/sound/powerup_pick.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sound/powerup_pick.ogg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/sound/stage_start.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sound/stage_start.ogg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/sound/statistics_1.ogg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sound/statistics_1.ogg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ci-begin-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ci-begin-master.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/enemy/EnemySummoner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/enemy/EnemySummoner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/obstructor/Wall.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/obstructor/Wall.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/enemy/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/enemy/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/game/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/game/Settings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/CI11-Tank/base/GameObject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/CI11-Tank/base/action/ActionSequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/action/ActionSequence.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/CI11-Tank/base/enemy/Enemy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/CI11-Tank/base/enemy/EnemyAnimator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/enemy/EnemyAnimator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/CI11-Tank/base/enemy/EnemyBullet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/CI11-Tank/base/enemy/EnemyBulletDirection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/CI11-Tank/base/enemy/EnemyExplosion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/CI11-Tank/base/game/GameWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/CI11-Tank/base/game/Settings.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/CI11-Tank/base/menu/MenuLife.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/CI11-Tank/base/menu/MenuScore.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/CI11-Tank/base/player/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/CI11-Tank/base/player/PlayerAnimator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/player/PlayerAnimator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/CI11-Tank/base/player/PlayerBullet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/CI11-Tank/base/player/PlayerBulletDirection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/CI11-Tank/base/renderer/AnimationRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/renderer/AnimationRenderer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/CI11-Tank/base/renderer/MenuLifeRenderer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/CI11-Tank/base/renderer/TextRenderer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/CI11-Tank/base/stage/Stage1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/CI11-Tank/tklibs/AudioUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/tklibs/AudioUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/CI11-Tank/tklibs/SpriteUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/BackGround.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/Background.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/CoverGameOverScene.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/CoverMenuScene.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/FrameCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/FrameCounter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/GameObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ci-begin-master/base/GameObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/KeyEventPress.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/Program.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/Vector2D.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/action/Action.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/action/Action.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/action/ActionParallel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/action/ActionParallel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/action/ActionRepeat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/action/ActionRepeat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/action/ActionSequence.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/action/ActionWait.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/action/ActionWait.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/enemy/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ci-begin-master/base/enemy/Enemy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/enemy/EnemyAnimator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/enemy/EnemyBullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ci-begin-master/base/enemy/EnemyBullet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/enemy/EnemyBulletDirection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/enemy/EnemyExplosion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/enemy/EnemyExplosion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/enemy/EnemySummoner$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/enemy/EnemySummoner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/game/GameCanvas.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/game/GameWindow$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/game/GameWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/game/Platform.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ci-begin-master/base/game/Platform.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/game/Settings.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ci-begin-master/base/game/Settings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/maps/Layer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ci-begin-master/base/maps/Layer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/maps/Map.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/menu/MenuLife.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/menu/MenuScore.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/obstructor/Wall.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/physics/BoxCollider.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/physics/BoxCollider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/physics/Physics.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/player/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ci-begin-master/base/player/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/player/PlayerAnimator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/player/PlayerBullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ci-begin-master/base/player/PlayerBullet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/player/PlayerBulletDirection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/renderer/AnimationRenderer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/renderer/BoxRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/renderer/BoxRenderer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/renderer/MenuLifeRenderer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/renderer/Renderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/renderer/Renderer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/renderer/SingleImageRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/renderer/SingleImageRenderer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/renderer/TextRenderer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/scene/GameOverScene.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/scene/GameOverScene.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/scene/MenuScene.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/scene/MenuScene.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/scene/Scene.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/scene/Scene.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/scene/SceneManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/scene/SceneManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/scene/SceneStage1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/ci-begin-master/base/scene/SceneStage1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/base/stage/Stage1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/tklibs/AudioUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/tklibs/Mathx.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/tklibs/Mathx.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/tklibs/SpriteUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/tklibs/SpriteUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/ci-begin-master/tklibs/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/tklibs/Utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/BackGround.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/Background.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/CoverGameOverScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/CoverGameOverScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/CoverMenuScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/CoverMenuScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/FrameCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/FrameCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/KeyEventPress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/KeyEventPress.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/Vector2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/Vector2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/action/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/action/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/action/ActionParallel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/action/ActionParallel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/action/ActionRepeat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/action/ActionRepeat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/action/ActionSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/action/ActionSequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/action/ActionWait.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/action/ActionWait.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/enemy/Enemy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/enemy/EnemyAnimator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/enemy/EnemyAnimator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/enemy/EnemyBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/enemy/EnemyBullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/enemy/EnemyBulletDirection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/enemy/EnemyBulletDirection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/enemy/EnemyExplosion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/enemy/EnemyExplosion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/enemy/EnemySummoner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/enemy/EnemySummoner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/game/GameCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/game/GameCanvas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/game/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/game/GameWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/game/Platform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/game/Platform.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/game/Settings.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/maps/Layer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/maps/Layer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/maps/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/maps/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/menu/MenuLife.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/menu/MenuScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/menu/MenuScore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/obstructor/Wall.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/physics/BoxCollider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/physics/BoxCollider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/physics/Physics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/physics/Physics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/player/PlayerAnimator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/player/PlayerAnimator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/player/PlayerBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/player/PlayerBullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/player/PlayerBulletDirection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/player/PlayerBulletDirection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/renderer/AnimationRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/renderer/AnimationRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/renderer/BoxRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/renderer/BoxRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/renderer/MenuLifeRenderer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/renderer/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/renderer/Renderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/renderer/SingleImageRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/renderer/SingleImageRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/renderer/TextRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/renderer/TextRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/scene/GameOverScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/scene/GameOverScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/scene/MenuScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/scene/MenuScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/scene/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/scene/Scene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/scene/SceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/scene/SceneManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/scene/SceneStage1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/scene/SceneStage1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/base/stage/Stage1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/tklibs/AudioUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tklibs/AudioUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/tklibs/Mathx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tklibs/Mathx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/tklibs/SpriteUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tklibs/SpriteUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/tklibs/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tklibs/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tank.iml" beforeDir="false" />
-    </list>
+    <list default="true" id="2266b40f-40fa-4f15-a675-cc11797b6ca4" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -324,10 +38,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/base/enemy/Enemy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
+            <state relative-caret-position="-306">
               <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
               <folding>
                 <element signature="e#878#887#0" expanded="true" />
@@ -340,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/src/base/game/Settings.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+              <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -366,10 +80,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/base/GameObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-689">
+            <state relative-caret-position="-444">
               <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
             </state>
           </provider>
@@ -390,8 +104,8 @@
         <option value="$PROJECT_DIR$/src/base/player/Player.java" />
         <option value="$PROJECT_DIR$/src/base/CoverGameOverScene.java" />
         <option value="$PROJECT_DIR$/src/base/enemy/Enemy.java" />
-        <option value="$PROJECT_DIR$/src/base/game/Settings.java" />
         <option value="$PROJECT_DIR$/src/base/scene/SceneStage1.java" />
+        <option value="$PROJECT_DIR$/src/base/game/Settings.java" />
       </list>
     </option>
   </component>
@@ -566,10 +280,10 @@
     <option name="totallyTimeSpent" value="11325000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
+    <frame x="-7" y="-7" width="1488" height="878" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -578,7 +292,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32872504" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32841823" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -588,7 +302,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.32841823" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32841823" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -684,27 +398,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/enemy/Enemy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
-          <folding>
-            <element signature="e#878#887#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/base/stage/Stage1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-180">
           <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/game/Settings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -727,8 +424,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/base/GameObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-689">
+        <state relative-caret-position="-444">
           <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/base/game/Settings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/base/enemy/Enemy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+          <folding>
+            <element signature="e#878#887#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

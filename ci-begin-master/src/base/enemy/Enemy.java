@@ -66,6 +66,7 @@ public class Enemy extends GameObject implements Physics {
     private void turn() {
         if (this.turnCounter.run()) {
             this.direction = (int) (Math.random() * 4 + 1);
+            this.turnCounter.reset();
         }
     }
 
