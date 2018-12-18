@@ -1,6 +1,7 @@
 package base.game;
 
 
+import base.CoverGamePauseScene;
 import base.GameObject;
 import base.scene.MenuScene;
 import base.scene.SceneManager;
@@ -9,23 +10,26 @@ import javax.swing.*;
 import java.awt.*;
 
 public class GameCanvas extends JPanel {
+    CoverGamePauseScene pauseScene;
 
     public GameCanvas() {
-        this.setPreferredSize(new Dimension(Settings.SCREEN_WIDTH, Settings.SCREEN_HEIGHT));
-
-
         SceneManager.signNewScene(new MenuScene());
+        pauseScene = new CoverGamePauseScene();
     }
 
 
     @Override
     protected void paintComponent(Graphics g) {
         g.setColor(Color.BLACK);
-        g.fillRect(0, 0, Settings.SCREEN_WIDTH, Settings.SCREEN_HEIGHT);
-        for (int i =0; i < GameObject.gameObjects.size(); i++) {
-            GameObject gameObject = GameObject.gameObjects.get(i);
-            if (gameObject.isActive) {
-                gameObject.render(g);
+        if (GameObject.pause) {
+            pauseScene.render(g);
+        } else {
+            g.fillRect(0, 0, Settings.SCREEN_WIDTH, Settings.SCREEN_HEIGHT);
+            for (int i = 0; i < GameObject.gameObjects.size(); i++) {
+                GameObject gameObject = GameObject.gameObjects.get(i);
+                if (gameObject.isActive) {
+                    gameObject.render(g);
+                }
             }
         }
     }
@@ -44,11 +48,15 @@ public class GameCanvas extends JPanel {
     }
 
     public void runAll() {
-//        for(GameObject gameObject: GameObject.gameObjects) {
-        for (int i=0; i < GameObject.gameObjects.size(); i++) {
-            GameObject gameObject = GameObject.gameObjects.get(i);
-            if (gameObject.isActive) {
-                gameObject.run();
+        if (GameObject.pause) {
+            pauseScene.run();
+        } else {
+            pauseScene.closeClip();
+            for (int i = 0; i < GameObject.gameObjects.size(); i++) {
+                GameObject gameObject = GameObject.gameObjects.get(i);
+                if (gameObject.isActive) {
+                    gameObject.run();
+                }
             }
         }
     }

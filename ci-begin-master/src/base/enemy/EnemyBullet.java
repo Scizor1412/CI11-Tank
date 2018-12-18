@@ -2,34 +2,26 @@ package base.enemy;
 
 import base.GameObject;
 import base.game.Platform;
-import base.player.Player;
-import base.renderer.BoxRenderer;
 import base.game.Settings;
 import base.physics.BoxCollider;
 import base.physics.Physics;
-import tklibs.SpriteUtils;
+import base.player.Player;
+import base.renderer.BoxRenderer;
+import tklibs.AudioUtils;
 
 import java.awt.*;
-import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
 public class EnemyBullet extends GameObject implements Physics {
     BoxCollider boxCollider;
     int direction;
     int damage;
+
     public EnemyBullet() {
         super();
-        this.boxCollider = new BoxCollider(this.position, this.anchor,8, 8);
-        //this.renderer = new BoxRenderer(this.boxCollider, Color.LIGHT_GRAY, true);
-        this.createrenderer();
-        this.damage=1;
-
-
-    }
-
-    private void createrenderer() {
-        BufferedImage image = SpriteUtils.loadImage("assets/Image/bullet/bullet_left.png");
-        this.renderer=new EnemyBulletDirection(image);
+        this.boxCollider = new BoxCollider(this.position, this.anchor,30, 30);
+        this.renderer = new BoxRenderer(this.boxCollider, Color.LIGHT_GRAY, true);
+        this.damage = 1;
     }
 
     @Override
@@ -37,17 +29,30 @@ public class EnemyBullet extends GameObject implements Physics {
         super.run();
         this.move();
         this.destroyIfNeeded();
-        this.hitWall();
         this.hitPlayer();
+        this.hitWall();
     }
 
     private void hitPlayer() {
         ArrayList<Player> collidedPlayers = GameObject.intersects(Player.class, this.boxCollider);
         if (collidedPlayers != null) {
             for (Player player : collidedPlayers) {
+                if(player.immune)
+                    return;
                 if (player != null) {
-                    player.takeDamage(this.damage);
-                    this.destroy();
+                    if (player.hp > 0) {
+                        player.hp -= 1;
+                        this.destroy();
+                        AudioUtils.loadSound("assets/sound/bullet_hit_2.wav").start();
+                    }
+                    if (player.hp <= 0){
+                        player.destroy();
+                        this.destroy();
+                        AudioUtils.loadSound("assets/sound/explosion_2.wav").start();
+                    } else {
+                        player.immune = true;
+                        player.immuneCounter.reset();
+                    }
                 }
             }
         }
@@ -57,32 +62,37 @@ public class EnemyBullet extends GameObject implements Physics {
         ArrayList<Platform> collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
         if (collidedPlatforms != null) {
             for (Platform platform : collidedPlatforms) {
-                if (platform.platformType == 1 || platform.platformType == 6) {
-                    platform.takeDamage(this.damage);
-                    platform.direction = this.direction;
+                if (platform != null) {
                     this.destroy();
+                    if (platform.platformType == 3) {
+                        platform.takeDamage(damage);
+                    }
                 }
             }
         }
+
     }
 
     private void move() {
         if (this.direction == 1) {
-            this.position.addThis(0, -5);
+            this.position.addThis(0, -Settings.WAY_SIZE);
         }
         if (this.direction == 2) {
-            this.position.addThis(0, 5);
+            this.position.addThis(0, Settings.WAY_SIZE);
         }
         if (this.direction == 3) {
-            this.position.addThis(-5, 0);
+            this.position.addThis(-Settings.WAY_SIZE, 0);
         }
         if (this.direction == 4) {
-            this.position.addThis(5, 0);
+            this.position.addThis(Settings.WAY_SIZE, 0);
         }
     }
 
     private void destroyIfNeeded() {
-        if (this.position.y < -20 || this.position.y > Settings.SCREEN_HEIGHT || this.position.x < -20 || this.position.x > Settings.SCREEN_WIDTH) {
+        if (this.position.y < -20
+                || this.position.y > Settings.SCREEN_HEIGHT
+                || this.position.x < -20
+                || this.position.x > Settings.SCREEN_WIDTH) {
             this.destroy();
         }
     }

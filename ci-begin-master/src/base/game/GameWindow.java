@@ -1,6 +1,13 @@
 package base.game;
 
+import base.CoverGamePauseScene;
+import base.CoverPlayScene;
+import base.GameObject;
 import base.KeyEventPress;
+import base.scene.GameOverScene;
+import base.scene.MenuScene;
+import base.scene.SceneManager;
+import base.scene.SceneStage1;
 
 import javax.swing.*;
 import java.awt.event.KeyAdapter;
@@ -9,8 +16,7 @@ import java.awt.event.KeyEvent;
 public class GameWindow extends JFrame {
     public GameWindow() {
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-//        this.setSize(Settings.SCREEN_WIDTH, Settings.SCREEN_HEIGHT);
-        this.setTitle("Game Tank");
+        this.setTitle("Tank");
         this.setResizable(false);
         this.addKeyEvent();
     }
@@ -21,20 +27,26 @@ public class GameWindow extends JFrame {
             @Override
             public void keyPressed(KeyEvent e) {
                 KeyEventPress.isAnyKeyPress = true;
-                if (e.getKeyCode() == Settings.UP_BUTTON) {
+                if (e.getKeyCode() == Settings.UP_BUTTON && !KeyEventPress.keyMovePress()) {
                     KeyEventPress.isUpPress = true;
                 }
-                if (e.getKeyCode() == Settings.DOWN_BUTTON) {
+                if (e.getKeyCode() == Settings.DOWN_BUTTON && !KeyEventPress.keyMovePress()) {
                     KeyEventPress.isDownPress = true;
                 }
-                if (e.getKeyCode() == Settings.LEFT_BUTTON) {
+                if (e.getKeyCode() == Settings.LEFT_BUTTON && !KeyEventPress.keyMovePress()) {
                     KeyEventPress.isLeftPress = true;
                 }
-                if (e.getKeyCode() == Settings.RIGHT_BUTTON) {
+                if (e.getKeyCode() == Settings.RIGHT_BUTTON && !KeyEventPress.keyMovePress()) {
                     KeyEventPress.isRightPress = true;
                 }
                 if (e.getKeyCode() == Settings.FIRE_BUTTON) {
                     KeyEventPress.isFirePress = true;
+                }
+                if (e.getKeyCode() == Settings.PAUSE_BUTTON) {
+                    KeyEventPress.isPauseKeyPress = true;
+                }
+                if (e.getKeyCode() == Settings.RETURN_BUTTON) {
+                    KeyEventPress.isReturnKeyPress = true;
                 }
             }
 
@@ -55,6 +67,24 @@ public class GameWindow extends JFrame {
                 }
                 if (e.getKeyCode() == KeyEvent.VK_SPACE) {
                     KeyEventPress.isFirePress = false;
+                }
+                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    if (SceneManager.currentScene instanceof SceneStage1) {
+                        if (GameObject.pause) {
+                            CoverPlayScene.playClip();
+                            CoverGamePauseScene.closeClip();
+                            GameObject.pause = false;
+                        } else {
+                            CoverPlayScene.closeClip();
+                            CoverGamePauseScene.playClip();
+                            GameObject.pause = true;
+                        }
+                    }
+                }
+                if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
+                    if (SceneManager.currentScene instanceof GameOverScene) {
+                        SceneManager.signNewScene(new MenuScene());
+                    }
                 }
             }
         });

@@ -8,6 +8,8 @@ import java.awt.*;
 import java.util.ArrayList;
 
 public class GameObject {
+    public static boolean pause = false;
+
     //static
     public static ArrayList<GameObject> gameObjects = new ArrayList<>();
 
@@ -47,8 +49,7 @@ public class GameObject {
                     && gameObject.getClass().isAssignableFrom(clazz)
                     && gameObject instanceof Physics) {
                 Physics gameObjectPhysics = (Physics) gameObject;
-                if (gameObjectPhysics.getBoxCollider() == boxCollider) {
-                } else if (gameObjectPhysics.getBoxCollider().intersects(boxCollider)) {
+                if (gameObjectPhysics.getBoxCollider().intersects(boxCollider)) {
                     gameObjectCollideds.add((E) gameObject);
                 }
             }
