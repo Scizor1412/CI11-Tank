@@ -3,6 +3,7 @@ package base.player;
 import base.FrameCounter;
 import base.GameObject;
 import base.KeyEventPress;
+import base.enemy.Enemy;
 import base.game.Platform;
 import base.game.Settings;
 import base.obstructor.Wall;
@@ -64,44 +65,55 @@ public class Player extends GameObject implements Physics {
 
     private void move() {
         if (moveCounter.run()) {
-            if (KeyEventPress.isUpPress) {
+            if (KeyEventPress.isUpPress && this.position.y > Settings.WAY_SIZE) {
                 float vy = -Settings.WAY_SIZE / 2;
                 float vx = 0;
                 this.position.addThis(vx, vy);
                 this.collidePlatform(vx, vy);
+                this.collideEnemy(vx, vy);
 
-            } else if (KeyEventPress.isDownPress) {
+            } else if (KeyEventPress.isDownPress && this.position.y < Settings.GAME_HEIGHT - Settings.WAY_SIZE/2) {
                 float vy = Settings.WAY_SIZE / 2;
                 float vx = 0;
                 this.position.addThis(vx, vy);
                 this.collidePlatform(vx, vy);
+                this.collideEnemy(vx, vy);
 
-            } else if (KeyEventPress.isLeftPress) {
+            } else if (KeyEventPress.isLeftPress && this.position.x > Settings.WAY_SIZE) {
                 float vx = -Settings.WAY_SIZE / 2;
                 float vy = 0;
                 this.position.addThis(vx, vy);
                 this.collidePlatform(vx, vy);
+                this.collideEnemy(vx, vy);
 
-            } else if (KeyEventPress.isRightPress) {
+            } else if (KeyEventPress.isRightPress && this.position.x < Settings.GAME_WIDTH - Settings.WAY_SIZE/2) {
                 float vx = Settings.WAY_SIZE / 2;
                 float vy = 0;
                 this.position.addThis(vx, vy);
                 this.collidePlatform(vx, vy);
+                this.collideEnemy(vx, vy);
             }
             moveCounter.reset();
         }
     }
 
+
+    private void collideEnemy(float vx, float vy) {
+        ArrayList<Enemy> collidedEnemies = GameObject.intersects(Enemy.class, this.boxCollider);
+        if (collidedEnemies != null) {
+            this.position.substractThis(vx, vy);
+        }
+    }
+
+
     private void collidePlatform(float vx, float vy) {
         ArrayList<Platform> collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
         if (collidedPlatforms != null) {
             for (Platform platform : collidedPlatforms) {
-                if (platform != null) {
-                    if (platform.platformType == 1 || platform.platformType == 2 || platform.platformType == 3) {
+                    if (platform.platformType == 1 || platform.platformType == 2 || platform.platformType == 6) {
                         this.position.substractThis(vx, vy);
                         break;
                     }
-                }
                 if(this.position.x>Settings.SCREEN_WIDTH){
                     this.position.substractThis(Settings.WAY_SIZE / 2, 0);
                 }

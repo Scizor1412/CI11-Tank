@@ -21,8 +21,8 @@ public class SceneStage1 extends Scene {
         EnemySummoner enemySummoner = GameObject.recycle(EnemySummoner.class);
         enemySummoner.position.set(-20, 0);
         EnemySummoner enemySummoner1 = GameObject.recycle(EnemySummoner.class);
-        enemySummoner.position.set(620, 0);
-        Map map = Map.load("assets/Image/map/tank..json");
+        enemySummoner1.position.set(300, 0);
+        Map map = Map.load("assets/Image/map/tank2.json");
         map.generate();
     }
 

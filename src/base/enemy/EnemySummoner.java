@@ -10,6 +10,7 @@ import base.physics.BoxCollider;
 import base.physics.Physics;
 
 import java.awt.*;
+import java.util.ArrayList;
 
 public class EnemySummoner extends GameObject implements Physics {
     BoxCollider boxCollider;
@@ -18,7 +19,6 @@ public class EnemySummoner extends GameObject implements Physics {
     public EnemySummoner() {
         this.anchor.set(0,0);
         this.boxCollider = new BoxCollider(this.position, this.anchor,20, 40);
-        this.renderer = new BoxRenderer(this.boxCollider, Color.WHITE, true);
         this.actionSummon = this.Summon();
     }
 
@@ -38,7 +38,7 @@ public class EnemySummoner extends GameObject implements Physics {
             }
         };
 
-        Action actionSummon = new ActionWait(120, summonEnemy);
+        Action actionSummon = new ActionWait(600, summonEnemy);
         Action actionSummonEnemy = new ActionRepeat(actionSummon);
         return actionSummonEnemy;
     }

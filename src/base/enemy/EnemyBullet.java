@@ -22,7 +22,7 @@ public class EnemyBullet extends GameObject implements Physics {
         this.boxCollider = new BoxCollider(this.position, this.anchor,8, 8);
         //this.renderer = new BoxRenderer(this.boxCollider, Color.LIGHT_GRAY, true);
         this.createrenderer();
-        this.damage=3;
+        this.damage=1;
 
 
     }
@@ -54,15 +54,13 @@ public class EnemyBullet extends GameObject implements Physics {
     }
 
     private void hitWall() {
-        ArrayList<Platform> collidedPlatforms = new ArrayList<>();
-        collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
+        ArrayList<Platform> collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
         if (collidedPlatforms != null) {
             for (Platform platform : collidedPlatforms) {
-                if (platform != null) {
-                    if (platform.platformType == 2 || platform.platformType == 3) {
-                        platform.takeDamage(this.damage);
-                        this.destroy();
-                    }
+                if (platform.platformType == 1 || platform.platformType == 6) {
+                    platform.takeDamage(this.damage);
+                    platform.direction = this.direction;
+                    this.destroy();
                 }
             }
         }

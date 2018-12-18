@@ -25,7 +25,7 @@ public class PlayerBullet extends GameObject implements Physics {
         super();
         this.boxCollider = new BoxCollider(this.position, this.anchor, 8, 8);
         this.createrenderer();
-        this.damage = 3;
+        this.damage = 1;
     }
 
     private void createrenderer() {
@@ -58,7 +58,7 @@ public class PlayerBullet extends GameObject implements Physics {
         if (collidedPlatforms != null) {
             for (Platform platform : collidedPlatforms) {
                 if (platform != null) {
-                    if (platform.platformType == 2 || platform.platformType == 3) {
+                    if (platform.platformType == 1 || platform.platformType == 6) {
                         platform.takeDamage(this.damage);
                         this.destroy();
                     }

@@ -1,6 +1,7 @@
 package base.obstructor;
 
 import base.GameObject;
+import base.game.Platform;
 import base.game.Settings;
 import base.physics.BoxCollider;
 import base.physics.Physics;
@@ -9,7 +10,7 @@ import tklibs.SpriteUtils;
 
 import java.awt.image.BufferedImage;
 
-public class Wall extends GameObject implements Physics {
+public class Wall extends Platform implements Physics {
     BoxCollider boxCollider;
     int hp;
 
@@ -19,7 +20,6 @@ public class Wall extends GameObject implements Physics {
 //        this.renderer = new BoxRenderer(this.boxCollider, Color.GREEN, true);
         BufferedImage image = SpriteUtils.loadImage("assets/Image/objects/brick.png");
         this.renderer = new SingleImageRenderer(image);
-        this.position.set(Settings.WAY_SIZE*10, Settings.WAY_SIZE*1);
         this.anchor.set(0,0);
         this.hp = 2;
     }
@@ -35,9 +35,6 @@ public class Wall extends GameObject implements Physics {
             this.hp = 0;
             this.destroy();
         }
-    }
-
-    private void destroyIfNeeded() {
     }
 
     @Override
