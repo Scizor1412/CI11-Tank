@@ -7,9 +7,4 @@ public class KeyEventPress {
     public static boolean isRightPress;
     public static boolean isFirePress;
     public static boolean isAnyKeyPress;
-    public static boolean isPauseKeyPress;
-
-    public static boolean keyMovePress() {
-        return isUpPress || isDownPress || isLeftPress || isRightPress;
-    }
 }

@@ -4,6 +4,7 @@ import base.action.Action;
 import base.action.ActionRepeat;
 import base.action.ActionWait;
 import base.GameObject;
+import base.game.Settings;
 import base.renderer.BoxRenderer;
 import base.physics.BoxCollider;
 import base.physics.Physics;
@@ -27,7 +28,7 @@ public class EnemySummoner extends GameObject implements Physics {
             @Override
             public boolean run(GameObject master) {
                 Enemy enemy = GameObject.recycle(Enemy.class);
-                enemy.position.set(master.position.add(20,0));
+                enemy.position.set(master.position.add(20 + Settings.WAY_SIZE/2,0+Settings.WAY_SIZE/2));
                 enemy.direction = (int) (Math.random()*4 +1);
                 return true;
             }

@@ -4,11 +4,12 @@ import base.FrameCounter;
 import base.GameObject;
 import base.game.Platform;
 import base.game.Settings;
+import base.menu.MenuScore;
+import base.menu.MenuWhite;
 import base.obstructor.Wall;
 import base.physics.BoxCollider;
 import base.physics.Physics;
 import base.renderer.BoxRenderer;
-import tklibs.AudioUtils;
 import tklibs.SpriteUtils;
 
 import java.awt.*;
@@ -18,6 +19,7 @@ import java.util.ArrayList;
 public class Enemy extends GameObject implements Physics {
     BoxCollider boxCollider;
     FrameCounter immuneCounter;
+    public static int numberEnemy=20;
     public int hp;
     boolean immune;
     int direction;
@@ -26,9 +28,11 @@ public class Enemy extends GameObject implements Physics {
 
     public Enemy() {
         super();
-        this.anchor.set(0,0);
+
         this.boxCollider = new BoxCollider(this.position, this.anchor, 15, 15);
         this.createRenderer();
+//        this.renderer = new BoxRenderer(this.boxCollider, Color.BLUE, true);
+
         this.hp = 3;
         this.immune = false;
         this.immuneCounter = new FrameCounter(20);
@@ -56,67 +60,46 @@ public class Enemy extends GameObject implements Physics {
     private void move() {
         if (this.moveCounter.run()) {
             if (this.direction == 1) {
-                this.position.addThis(0, -Settings.WAY_SIZE / 2);
-                ArrayList<Platform> collidedPlatforms = new ArrayList<>();
-                collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
-                if (collidedPlatforms != null) {
-                    for (Platform platform : collidedPlatforms) {
-                        if (platform != null) {
-                            if (platform.platformType != 4) {
-                                this.position.substractThis(0, -Settings.WAY_SIZE / 2);
-                                this.direction = (int) (Math.random() * 4 + 1);
-                            }
-                        }
-                    }
-
-                }
+                float vy = -Settings.WAY_SIZE / 2;
+                float vx = 0;
+                this.position.addThis(vx, vy);
+                this.collidePlatform(vx, vy);
             }
+
             if (this.direction == 2) {
-                this.position.addThis(0, Settings.WAY_SIZE / 2);
-                ArrayList<Platform> collidedPlatforms = new ArrayList<>();
-                collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
-                if (collidedPlatforms != null) {
-                    for (Platform platform : collidedPlatforms) {
-                        if (platform != null) {
-                            if (platform.platformType != 4) {
-                                this.position.substractThis(0, Settings.WAY_SIZE / 2);
-                                this.direction = (int) (Math.random() * 4 + 1);
-                            }
-                        }
-                    }
-                }
+                float vy = Settings.WAY_SIZE / 2;
+                float vx = 0;
+                this.position.addThis(vx, vy);
+                this.collidePlatform(vx, vy);
             }
             if (this.direction == 3) {
-                this.position.addThis(-Settings.WAY_SIZE / 2, 0);
-                ArrayList<Platform> collidedPlatforms = new ArrayList<>();
-                collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
-                if (collidedPlatforms != null) {
-                    for (Platform platform : collidedPlatforms) {
-                        if (platform != null) {
-                            if (platform.platformType != 4) {
-                                this.position.substractThis(-Settings.WAY_SIZE / 2, 0);
-                                this.direction = (int) (Math.random() * 4 + 1);
-                            }
-                        }
-                    }
-                }
+                float vx = -Settings.WAY_SIZE / 2;
+                float vy = 0;
+                this.position.addThis(vx, vy);
+                this.collidePlatform(vx, vy);
             }
             if (this.direction == 4) {
-                this.position.addThis(Settings.WAY_SIZE / 2, 0);
-                ArrayList<Platform> collidedPlatforms = new ArrayList<>();
-                collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
-                if (collidedPlatforms != null) {
-                    for (Platform platform : collidedPlatforms) {
-                        if (platform != null) {
-                            if (platform.platformType != 4) {
-                                this.position.substractThis(Settings.WAY_SIZE / 2, 0);
-                                this.direction = (int) (Math.random() * 4 + 1);
-                            }
-                        }
+                float vx = Settings.WAY_SIZE / 2;
+                float vy = 0;
+                this.position.addThis(vx, vy);
+                this.collidePlatform(vx, vy);
+            }
+            this.moveCounter.reset();
+        }
+    }
+
+    private void collidePlatform(float vx, float vy) {
+        ArrayList<Platform> collidedPlatforms = GameObject.intersects(Platform.class, this.boxCollider);
+        if (collidedPlatforms != null) {
+            for (Platform platform : collidedPlatforms) {
+                if (platform != null) {
+                    if (platform.platformType == 1 || platform.platformType == 2 || platform.platformType == 3) {
+                        this.position.substractThis(vx, vy);
+                        this.direction = (int) (Math.random() * 4 + 1);
+                        break;
                     }
                 }
             }
-            this.moveCounter.reset();
         }
     }
 
@@ -149,13 +132,10 @@ public class Enemy extends GameObject implements Physics {
     public void takeDamage (int damage) {
         if(this.immune)
             return;
-        if (hp > 0) {
-            this.hp -= damage;
-            AudioUtils.loadSound("assets/sound/bullet_hit_1.wav").start();
-        }
+        this.hp -= damage;
         if (hp <= 0) {
+            this.hp = 0;
             this.destroy();
-            AudioUtils.loadSound("assets/sound/explosion_1.wav").start();
         } else {
             this.immune = true;
             this.immuneCounter.reset();
@@ -165,6 +145,13 @@ public class Enemy extends GameObject implements Physics {
     @Override
     public void destroy() {
         super.destroy();
+        if (numberEnemy >= 0) {
+            numberEnemy = numberEnemy -1;
+        }
+        else {
+            numberEnemy = 20;
+        }
+        MenuWhite menuWhite = GameObject.recycle(MenuWhite.class);
         EnemyExplosion explosion = GameObject.recycle(EnemyExplosion.class);
         explosion.position.set(this.position);
     }

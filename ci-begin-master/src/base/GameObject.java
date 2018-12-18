@@ -8,8 +8,6 @@ import java.awt.*;
 import java.util.ArrayList;
 
 public class GameObject {
-    public static boolean pause = false;
-
     //static
     public static ArrayList<GameObject> gameObjects = new ArrayList<>();
 
