@@ -4,11 +4,13 @@ import base.action.Action;
 import base.action.ActionRepeat;
 import base.action.ActionWait;
 import base.GameObject;
+import base.game.Settings;
 import base.renderer.BoxRenderer;
 import base.physics.BoxCollider;
 import base.physics.Physics;
 
 import java.awt.*;
+import java.util.ArrayList;
 
 public class EnemySummoner extends GameObject implements Physics {
     BoxCollider boxCollider;
@@ -17,7 +19,6 @@ public class EnemySummoner extends GameObject implements Physics {
     public EnemySummoner() {
         this.anchor.set(0,0);
         this.boxCollider = new BoxCollider(this.position, this.anchor,20, 40);
-        this.renderer = new BoxRenderer(this.boxCollider, Color.WHITE, true);
         this.actionSummon = this.Summon();
     }
 
@@ -27,7 +28,7 @@ public class EnemySummoner extends GameObject implements Physics {
             @Override
             public boolean run(GameObject master) {
                 Enemy enemy = GameObject.recycle(Enemy.class);
-                enemy.position.set(master.position.add(20,0));
+                enemy.position.set(master.position.add(20 + Settings.WAY_SIZE/2,0+Settings.WAY_SIZE/2));
                 enemy.direction = (int) (Math.random()*4 +1);
                 return true;
             }
@@ -37,7 +38,7 @@ public class EnemySummoner extends GameObject implements Physics {
             }
         };
 
-        Action actionSummon = new ActionWait(120, summonEnemy);
+        Action actionSummon = new ActionWait(600, summonEnemy);
         Action actionSummonEnemy = new ActionRepeat(actionSummon);
         return actionSummonEnemy;
     }

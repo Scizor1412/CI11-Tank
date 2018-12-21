@@ -1,8 +1,11 @@
 package base;
 
 import base.renderer.SingleImageRenderer;
+import base.scene.SceneStage1;
 
 import base.game.Settings;
+import base.scene.MenuScene;
+import base.scene.SceneManager;
 import tklibs.AudioUtils;
 
 import javax.sound.sampled.Clip;
@@ -18,6 +21,7 @@ public class CoverGameOverScene extends GameObject {
         loopCount = new FrameCounter(60 * 2);
         clip.setFramePosition(0);
         clip.start();
+
     }
 
     @Override

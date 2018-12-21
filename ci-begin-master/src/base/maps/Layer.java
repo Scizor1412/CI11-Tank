@@ -29,7 +29,7 @@ public class Layer {
                 int mapData = data.get(tileY*width + tileX);
                 if (mapData !=0) {
                     Platform platform = Platform.create(mapData);
-                    platform.position.set(tileX* Settings.WAY_SIZE, tileY*Settings.WAY_SIZE);
+                    platform.position.set(tileX* Settings.WAY_SIZE/2, tileY*Settings.WAY_SIZE/2);
                     gameObjects.add(platform);
                 }
             }

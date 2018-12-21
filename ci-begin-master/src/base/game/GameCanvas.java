@@ -15,6 +15,7 @@ public class GameCanvas extends JPanel {
     public GameCanvas() {
         SceneManager.signNewScene(new MenuScene());
         pauseScene = new CoverGamePauseScene();
+        this.setPreferredSize(new Dimension(Settings.SCREEN_WIDTH, Settings.SCREEN_HEIGHT));
     }
 
 

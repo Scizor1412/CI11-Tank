@@ -13,12 +13,13 @@ public class EnemyExplosion extends GameObject {
     }
     private void createAnimation() {
         ArrayList<BufferedImage> images = SpriteUtils.loadImages(
-                "assets/Image/explosion/0.gif",
-                "assets/Image/explosion/1.gif",
-                "assets/Image/explosion/2.gif",
-                "assets/Image/explosion/3.gif",
-                "assets/Image/explosion/4.gif",
-                "assets/Image/explosion/5.gif"
+
+                "assets/Image/explosion/0.png",
+                "assets/Image/explosion/1.png",
+                "assets/Image/explosion/2.png",
+                "assets/Image/explosion/3.png",
+                "assets/Image/explosion/4.png",
+                "assets/Image/explosion/5.png"
         );
         this.renderer = new AnimationRenderer(images
                 , 5, true);

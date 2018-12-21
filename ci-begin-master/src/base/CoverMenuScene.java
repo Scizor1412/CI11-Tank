@@ -4,6 +4,7 @@ package base;
 import base.renderer.SingleImageRenderer;
 import base.scene.SceneStage1;
 import base.game.Settings;
+import base.renderer.SingleImageRenderer;
 import base.scene.SceneManager;
 import tklibs.AudioUtils;
 

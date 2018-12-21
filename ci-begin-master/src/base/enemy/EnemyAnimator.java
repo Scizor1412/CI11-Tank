@@ -2,6 +2,7 @@ package base.enemy;
 
 import base.FrameCounter;
 import base.GameObject;
+import base.player.Player;
 import base.renderer.Renderer;
 
 import java.awt.*;

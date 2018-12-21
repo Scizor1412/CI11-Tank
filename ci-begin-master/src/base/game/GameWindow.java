@@ -16,7 +16,8 @@ import java.awt.event.KeyEvent;
 public class GameWindow extends JFrame {
     public GameWindow() {
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        this.setTitle("Tank");
+//        this.setSize(Settings.SCREEN_WIDTH, Settings.SCREEN_HEIGHT);
+        this.setTitle("Game Tank");
         this.setResizable(false);
         this.addKeyEvent();
     }
@@ -27,16 +28,16 @@ public class GameWindow extends JFrame {
             @Override
             public void keyPressed(KeyEvent e) {
                 KeyEventPress.isAnyKeyPress = true;
-                if (e.getKeyCode() == Settings.UP_BUTTON && !KeyEventPress.keyMovePress()) {
+                if (e.getKeyCode() == Settings.UP_BUTTON) {
                     KeyEventPress.isUpPress = true;
                 }
-                if (e.getKeyCode() == Settings.DOWN_BUTTON && !KeyEventPress.keyMovePress()) {
+                if (e.getKeyCode() == Settings.DOWN_BUTTON) {
                     KeyEventPress.isDownPress = true;
                 }
-                if (e.getKeyCode() == Settings.LEFT_BUTTON && !KeyEventPress.keyMovePress()) {
+                if (e.getKeyCode() == Settings.LEFT_BUTTON) {
                     KeyEventPress.isLeftPress = true;
                 }
-                if (e.getKeyCode() == Settings.RIGHT_BUTTON && !KeyEventPress.keyMovePress()) {
+                if (e.getKeyCode() == Settings.RIGHT_BUTTON) {
                     KeyEventPress.isRightPress = true;
                 }
                 if (e.getKeyCode() == Settings.FIRE_BUTTON) {
